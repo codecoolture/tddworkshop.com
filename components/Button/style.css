@@ -1,0 +1,30 @@
+.Button {
+  border: 2px solid var(--gray6);
+  display: block;
+  font-size: var(--fs-m);
+  padding: 0.5em 1em;
+
+  background-color: var(--gray3);
+  border-radius: 9999px;
+  color: var(--gray11);
+  text-align: center;
+  text-decoration: none;
+
+  transition: all ease-in 250ms;
+}
+
+.Button:hover {
+  background-color: var(--gray5);
+  border-color: var(--gray7);
+}
+
+.Button--Solid {
+  background-color: var(--indigo3);
+  border-color: var(--indigo6);
+  color: var(--indigo11);
+}
+
+.Button--Solid:hover {
+  background-color: var(--indigo5);
+  border-color: var(--indigo7);
+}

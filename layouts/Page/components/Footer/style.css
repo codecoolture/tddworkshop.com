@@ -1,0 +1,45 @@
+.Page__Footer {
+  border-top: 1px solid var(--indigo6);
+  padding: 1em 1em 0;
+
+  background-color: var(--indigo1);
+}
+
+.Page__Footer__Text {
+  font-size: var(--fs-m);
+
+  font-family: var(--ff-serif);
+}
+
+.Page__Footer__Links {
+  margin-top: 1em;
+
+  list-style-type: none;
+}
+
+.Page__Footer__LinkWrapper {
+  display: flex;
+  font-size: var(--fs-m);
+  margin-top: 0.5em;
+}
+
+.Page__Footer__Link {
+  letter-spacing: 1px;
+
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Page__Footer__Copy {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1em -1em 0 -1em;
+  padding: 0.25em 0;
+  width: calc(100% + 2em); /* summing parent's padding */
+}
+
+.Page__Footer__Code {
+  font-size: var(--fs-xs);
+}

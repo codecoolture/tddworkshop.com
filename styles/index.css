@@ -1,0 +1,19 @@
+@import "@radix-ui/colors/grayDark.css";
+@import "@radix-ui/colors/indigoDark.css";
+@import "@radix-ui/colors/violetDark.css";
+@import "@radix-ui/colors/yellowDark.css";
+
+@import "../components/Button/style.css";
+@import "../components/Blockquote/style.css";
+@import "../components/Code/style.css";
+@import "../components/Figure/style.css";
+@import "../components/Link/style.css";
+@import "../components/List/style.css";
+@import "../components/Text/style.css";
+@import "../components/Underline/style.css";
+
+@import "../layouts/Page/style.css";
+@import "../layouts/Page/components/Footer/style.css";
+
+@import "../pages/style.css";
+@import "../pages/index.css";

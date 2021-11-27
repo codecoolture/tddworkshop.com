@@ -1,0 +1,95 @@
+.Hero {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(50vh - 2em);
+  padding: 3em 5vw;
+  position: relative;
+
+  background-color: var(--gray2);
+}
+
+.Hero p {
+  font-size: var(--fs-xl);
+  letter-spacing: -1px;
+  line-height: 1.15;
+
+  font-family: var(--ff-sans-serif);
+  font-weight: 700;
+}
+
+.Hero p:not(:first-of-type) {
+  margin-top: 1em;
+}
+
+.Hero p strong {
+  color: var(--indigo9);
+}
+
+.Hero__Buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.Hero__Buttons__Button:not(:first-of-type) {
+  margin-top: 0.5em;
+}
+
+.Description {
+  margin: 0 auto;
+  max-width: calc(1100px - 2em);
+  padding: 1em;
+}
+
+.Description h2 {
+  margin: 1em 0 0.5em;
+}
+
+.Description h3 {
+  display: inline-block;
+  font-size: var(--fs-m);
+  margin: 0 0 0.5em;
+
+  background-color: var(--yellow3);
+  color: var(--yellow11);
+  text-transform: uppercase;
+}
+
+.Description p {
+  margin-bottom: 1em;
+}
+
+.Description ul p {
+  margin: 0;
+}
+
+.Picture {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .Hero {
+    padding: 5em 5vw;
+  }
+
+  .Hero p {
+    max-width: 1000px;
+  }
+
+  .Hero__Buttons {
+    flex-direction: row;
+  }
+
+  .Hero__Buttons__Button:not(:first-of-type) {
+    margin-left: 0.5em;
+    margin-top: 0;
+  }
+
+  .Picture {
+    margin: 0 auto;
+    max-width: 85%;
+    width: 800px;
+  }
+}

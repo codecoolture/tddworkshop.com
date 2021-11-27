@@ -1,0 +1,28 @@
+.List {
+  list-style-type: none;
+  margin: 0.5em 0;
+}
+
+.List__Item {
+  align-items: baseline;
+  display: flex;
+}
+
+.List__Item:not(:first-of-type) {
+  margin-top: 0.35em;
+}
+
+.List__Item::before {
+  content: "";
+
+  box-sizing: border-box;
+  border: 0.1em solid var(--gray6);
+  flex-shrink: 0;
+  height: 0.75em;
+  margin-right: 10px;
+  width: 0.75em;
+  background-color: var(--gray3);
+  border-radius: 100%;
+
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05);
+}

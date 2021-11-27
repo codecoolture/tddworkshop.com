@@ -1,0 +1,48 @@
+:root {
+  --c-black: #000;
+  --c-white: #fff;
+
+  --ff-serif: "IBM Plex Serif", serif;
+  --ff-sans-serif: "IBM Plex Sans", sans-serif;
+  --ff-monospace: "IBM Plex Mono", monospace;
+
+  --fs-xl: 2.5em;
+  --fs-l: 1.5em;
+  --fs-m: 18px;
+  --fs-s: 0.8em;
+  --fs-xs: 0.6em;
+  --fs-xxs: 0.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: var(--fs-m);
+  line-height: 1.65;
+  width: 100%;
+
+  background-color: var(--gray1);
+
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--gray12);
+  font-family: var(--ff-sans-serif);
+}
+
+@media screen and (min-width: 320px) {
+  :root {
+    --fs-m: calc(18px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --fs-m: 24px;
+  }
+}
