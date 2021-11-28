@@ -39,15 +39,6 @@ export default function Homepage() {
         </section>
 
         <section className="Description">
-          <h2 id="tdd">¿Por qué TDD?</h2>
-
-          <p>
-            TDD (del inglés: <em>test-driven development</em>) es una metodología que consiste en aplicar pequeños
-            ciclos de desarrollo orientados a resolver casos de prueba. Como beneficio, ganaremos en productividad
-            (siempre estamos desarrollando con un objetivo claro: hacer pasar la siguiente prueba), escribiendo a su vez
-            código bien diseñado, fácil de probar y mantener.
-          </p>
-
           <h2 id="workshop">El taller</h2>
 
           <p>
@@ -79,16 +70,6 @@ export default function Homepage() {
             </List.Item>
           </List>
 
-          <Blockquote>
-            <p>
-              Pss! En{" "}
-              <Link href="https://bit.ly/34ZnpuO" target="blank">
-                este documento
-              </Link>{" "}
-              tienes algunas de las referencias que he utilizado para preparar el taller.
-            </p>
-          </Blockquote>
-
           <h3>¿Cómo se desarrolla el taller?</h3>
 
           <p>
@@ -114,8 +95,8 @@ export default function Homepage() {
 
           <p>
             Además, el taller es agnóstico de front-end o back-end aunque se puede ajustar a las necesidades de cada
-            grupo (por ejemplo, haciendo TDD sobre componentes React si la formación se imparte a un equipo de
-            front-end).
+            grupo (por ejemplo, haciendo TDD sobre componentes React si la formación se imparte a un equipo que lo
+            utilice).
           </p>
 
           <h3>Precio y aforo</h3>
@@ -123,6 +104,15 @@ export default function Homepage() {
           <p>
             El precio del taller es de <strong>250EUR/persona</strong> (+ IVA), para un mínimo de 5 y un máximo de 10
             personas por sesión.
+          </p>
+
+          <h2 id="tdd">¿Por qué TDD?</h2>
+
+          <p>
+            TDD (del inglés: <em>test-driven development</em>) es una metodología que consiste en aplicar pequeños
+            ciclos de desarrollo orientados a resolver casos de prueba. Como beneficio, ganaremos en productividad
+            (siempre estamos desarrollando con un objetivo claro: hacer pasar la siguiente prueba), escribiendo a su vez
+            código bien diseñado, fácil de probar y mantener.
           </p>
 
           <h2 id="contact">Contacto</h2>
@@ -142,18 +132,24 @@ export default function Homepage() {
             <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank">
               Sergio
             </Link>{" "}
-            y llevo practicando TDD profesionalmente desde 2014, especialmente en el contexto de aplicaciones web (tanto{" "}
-            <em>back-end</em> como <em>front-end</em>). Desde hace varios años, compagino mi actividad como
-            desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas prácticas de
-            desarrollo de software.
+            y llevo desarrollando software profesionalmente desde hace una década, especialmente en el contexto de
+            aplicaciones web (tanto <em>back-end</em> como <em>front-end</em>). Desde hace varios años, compagino mi
+            actividad como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas
+            prácticas de desarrollo de software.
           </p>
 
           <h3>Material adicional</h3>
 
           <List>
             <List.Item>
+              <Link href="https://bit.ly/34ZnpuO" target="blank">
+                Lista de lecturas recomendadas para estudiar y aprender TDD
+              </Link>
+            </List.Item>
+
+            <List.Item>
               <Link href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/" target="blank">
-                Aplicando ATDD para resolver El Juego de la Vida
+                Aplicando (A)TDD para resolver El Juego de la Vida
               </Link>
             </List.Item>
             <List.Item>
