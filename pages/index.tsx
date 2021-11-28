@@ -16,7 +16,7 @@ export default function Homepage() {
           property="og:description"
           content="Descubre y aprende TDD a través de una formación práctica y completa. Sin bullshit."
         />
-        <meta property="og:image" content="https://tddworkshop.com/static/img/banner.png" />
+        <meta property="og:image" content="https://tddworkshop.com/static/img/social_es.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@codecoolture" />
@@ -26,7 +26,7 @@ export default function Homepage() {
         />
         <meta name="twitter:site" content="@codecoolture" />
         <meta name="twitter:title" content="Escribe mejor software, de manera sostenible" />
-        <meta name="twitter:image" content="https://tddworkshop.com/static/img/banner.png" />
+        <meta name="twitter:image" content="https://tddworkshop.com/static/img/social_es.png" />
 
         <title>Escribe mejor software, de manera sostenible</title>
       </Head>
