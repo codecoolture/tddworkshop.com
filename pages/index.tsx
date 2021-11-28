@@ -3,6 +3,7 @@ import { Figure } from "../components/Figure";
 import { Link } from "../components/Link";
 import { List } from "../components/List";
 import { Page } from "../layouts/Page";
+import gdcrImg from "../public/static/img/gdcr19.jpeg";
 
 export default function Homepage() {
   return (
@@ -160,7 +161,7 @@ export default function Homepage() {
 
           <div className="Picture">
             <Figure
-              src="/static/img/gdcr19.jpeg"
+              src={gdcrImg}
               alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid"
               title="En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de software (2019)."
             />
