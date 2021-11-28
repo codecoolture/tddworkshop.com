@@ -86,7 +86,7 @@ export default function Homepage() {
 
           <p>Las 10 horas de la formación se pueden repartir a lo largo de 4 ó 5 días (idealmente, consecutivos).</p>
 
-          <h3>Tecnologías</h3>
+          <h3>Tecnologías y lenguajes de programación</h3>
 
           <p>
             El taller utiliza JavaScript/TypeScript como base (para los ejemplos), pero la formación se podrá
