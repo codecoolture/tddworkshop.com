@@ -1,4 +1,3 @@
-import { Blockquote } from "../components/Blockquote";
 import { Button } from "../components/Button";
 import { Figure } from "../components/Figure";
 import { Link } from "../components/Link";
