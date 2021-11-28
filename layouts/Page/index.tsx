@@ -1,4 +1,5 @@
 import { Footer } from "./components/Footer";
+import { Seo } from "./components/Seo";
 
 export interface PageProps {
   children: React.ReactNode;
@@ -11,5 +12,7 @@ export function Page({ children }: PageProps) {
 Page.Main = function Main({ children }: { children: React.ReactNode }) {
   return <main className="Page__Main">{children}</main>;
 };
+
+Page.Seo = Seo;
 
 Page.Footer = Footer;

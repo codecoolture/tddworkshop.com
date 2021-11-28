@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Blockquote } from "../components/Blockquote";
 import { Button } from "../components/Button";
 import { Figure } from "../components/Figure";
@@ -9,27 +8,17 @@ import { Page } from "../layouts/Page";
 export default function Homepage() {
   return (
     <Page>
-      <Head>
-        <meta property="og:url" content="https://tddworkshop.com" />
-        <meta property="og:title" content="Escribe mejor software, de manera sostenible" />
-        <meta
-          property="og:description"
-          content="Descubre y aprende TDD a través de una formación práctica y completa. Sin bullshit."
-        />
-        <meta property="og:image" content="https://tddworkshop.com/static/img/social_es.png" />
+      <Page.Seo>
+        <Page.Seo.Url>https://tddworkshop.com/</Page.Seo.Url>
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@codecoolture" />
-        <meta
-          name="twitter:description"
-          content="Descubre y aprende TDD a través de una formación práctica y completa. Sin bullshit."
-        />
-        <meta name="twitter:site" content="@codecoolture" />
-        <meta name="twitter:title" content="Escribe mejor software, de manera sostenible" />
-        <meta name="twitter:image" content="https://tddworkshop.com/static/img/social_es.png" />
+        <Page.Seo.Title>Escribe mejor software, de manera sostenible</Page.Seo.Title>
 
-        <title>Escribe mejor software, de manera sostenible</title>
-      </Head>
+        <Page.Seo.Description>
+          Descubre y aprende TDD a través de una formación práctica y completa. Sin bullshit.
+        </Page.Seo.Description>
+
+        <Page.Seo.Image>https://tddworkshop.com/static/img/social_es.png</Page.Seo.Image>
+      </Page.Seo>
 
       <Page.Main>
         <section className="Hero">
