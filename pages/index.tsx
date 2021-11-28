@@ -84,7 +84,7 @@ export default function Homepage() {
             <strong>herramientas online y vídeoconferencia</strong>.
           </p>
 
-          <p>Las 10 horas de la formación se pueden repartir a lo largo de 4 ó 5 días (idealmente, consecutivos).</p>
+          <p>Las 10 horas de la formación se pueden repartir a lo largo de 4 ó 5 días.</p>
 
           <h3>Tecnologías y lenguajes de programación</h3>
 
