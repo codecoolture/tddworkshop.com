@@ -31,6 +31,7 @@ Seo.Description = function SeoDescription(props: { children: string }) {
     <Head>
       <meta property="og:description" content={props.children} />
       <meta name="twitter:description" content={props.children} />
+      <meta name="description" content={props.children} />
     </Head>
   );
 };
