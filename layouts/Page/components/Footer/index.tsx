@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Code } from "../../../../components/Code";
-import { Link } from "../../../../components/Link";
+import { Link, LinkProps } from "../../../../components/Link";
 import { Underline } from "../../../../components/Underline";
 
 export function Footer({ children }: { children: ReactNode }) {
@@ -15,10 +15,10 @@ Footer.Links = function FooterLinks({ children }: { children: ReactNode }) {
   return <ul className="Page__Footer__Links">{children}</ul>;
 };
 
-Footer.Link = function FooterLink({ children, href }: { children: ReactNode; href: string }) {
+Footer.Link = function FooterLink({ children, ...props }: Pick<LinkProps, "children" | "href" | "rel" | "target">) {
   return (
     <li className="Page__Footer__LinkWrapper">
-      <Link href={href} target="_blank" className="Page__Footer__Link">
+      <Link {...props} target="_blank" className="Page__Footer__Link">
         <Underline>{children}</Underline>
       </Link>
     </li>

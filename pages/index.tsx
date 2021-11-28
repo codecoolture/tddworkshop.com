@@ -120,7 +120,7 @@ export default function Homepage() {
           <p>
             Si quieres más información sobre el taller, puedes escribirme a <strong>hola@codecoolture.com</strong> o
             utilizar Twitter:{" "}
-            <Link href="https://twitter.com/codecoolture" target="blank">
+            <Link href="https://twitter.com/codecoolture" target="_blank" rel="noreferrer">
               <strong>@codecoolture</strong>
             </Link>
           </p>
@@ -129,7 +129,7 @@ export default function Homepage() {
 
           <p>
             ¡Hola! 👋 Soy{" "}
-            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank">
+            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
               Sergio
             </Link>{" "}
             y llevo desarrollando software profesionalmente desde hace una década, especialmente en el contexto de
@@ -142,18 +142,22 @@ export default function Homepage() {
 
           <List>
             <List.Item>
-              <Link href="https://bit.ly/34ZnpuO" target="blank">
+              <Link href="https://bit.ly/34ZnpuO" target="_blank" rel="noreferrer">
                 Lista de lecturas recomendadas para estudiar y aprender TDD
               </Link>
             </List.Item>
 
             <List.Item>
-              <Link href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/" target="blank">
+              <Link
+                href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Aplicando (A)TDD para resolver El Juego de la Vida
               </Link>
             </List.Item>
             <List.Item>
-              <Link href="https://github.com/codecoolture/react-atdd-playground" target="blank">
+              <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
                 GitHub: codecoolture/react-atdd-playground
               </Link>
             </List.Item>
@@ -178,7 +182,9 @@ export default function Homepage() {
         </Page.Footer.Text>
 
         <Page.Footer.Links>
-          <Page.Footer.Link href="https://codecoolture.com">Visita codecoolture.com</Page.Footer.Link>
+          <Page.Footer.Link href="https://codecoolture.com" rel="noreferrer">
+            Visita codecoolture.com
+          </Page.Footer.Link>
         </Page.Footer.Links>
 
         <Page.Footer.Copy>&copy; 2021 The TDD Workshop</Page.Footer.Copy>

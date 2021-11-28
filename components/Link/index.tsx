@@ -1,4 +1,4 @@
-type LinkProps = Pick<React.HTMLProps<HTMLAnchorElement>, "href" | "target"> & {
+export type LinkProps = Pick<React.HTMLProps<HTMLAnchorElement>, "href" | "rel" | "target"> & {
   className?: string;
   children: React.ReactNode;
   decoration?: boolean;
