@@ -138,6 +138,7 @@ export default function Homepage() {
             initialValues={{
               doNotWriteIfHuman: "",
               email: "",
+              "form-name": "contact",
               message: "",
             }}
             onSubmit={async (values) => {
@@ -159,6 +160,8 @@ export default function Homepage() {
             {({ errors }) => {
               return (
                 <Form name="contact" className="Form" data-netlify="true" netlify-honeypot="doNotWriteIfHuman">
+                  <Field name="form-name" type="hidden" />
+
                   <Field name="doNotWriteIfHuman" type="hidden" />
 
                   <TextField error={errors.email}>
