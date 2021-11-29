@@ -1,4 +1,5 @@
 import { Field, Form, Formik } from "formik";
+import toast from "react-hot-toast";
 import * as yup from "yup";
 import { Button } from "../components/Button";
 import { Figure } from "../components/Figure";
@@ -141,7 +142,7 @@ export default function Homepage() {
               "form-name": "contact",
               message: "",
             }}
-            onSubmit={async (values) => {
+            onSubmit={async (values, { resetForm }) => {
               await fetch("/", {
                 body: new URLSearchParams(values).toString(),
                 headers: {
@@ -149,6 +150,13 @@ export default function Homepage() {
                 },
                 method: "POST",
               });
+
+              toast.success("¡Mensaje recibido! Intentaré contestarte en menos de 48 horas.", {
+                position: "bottom-center",
+                className: "Toast",
+              });
+
+              resetForm();
             }}
             validateOnBlur={false}
             validateOnChange={false}

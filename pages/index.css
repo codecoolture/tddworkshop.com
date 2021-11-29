@@ -80,6 +80,10 @@
     auto;
 }
 
+.Toast {
+  font-size: var(--fs-s);
+}
+
 @media screen and (min-width: 750px) {
   .Hero {
     padding: 5em 5vw;
