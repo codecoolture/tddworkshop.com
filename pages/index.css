@@ -50,7 +50,7 @@
 .Description h3 {
   display: inline-block;
   font-size: var(--fs-m);
-  margin: 0 0 0.5em;
+  margin: 1em 0 0.5em;
 
   background-color: var(--yellow3);
   color: var(--yellow11);
@@ -67,6 +67,17 @@
 
 .Picture {
   max-width: 100%;
+}
+
+.Form {
+  display: grid;
+  row-gap: 1em;
+}
+
+.Form__Submit {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🚀</text></svg>")
+      12 12,
+    auto;
 }
 
 @media screen and (min-width: 750px) {
