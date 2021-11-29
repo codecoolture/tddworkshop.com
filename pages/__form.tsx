@@ -1,11 +1,7 @@
-import { Field, Form, Formik } from "formik";
-import toast from "react-hot-toast";
-import * as yup from "yup";
 import { Button } from "../components/Button";
 import { Figure } from "../components/Figure";
 import { Link } from "../components/Link";
 import { List } from "../components/List";
-import { TextField } from "../components/TextField";
 import { Page } from "../layouts/Page";
 import gdcrImg from "../public/static/img/gdcr19.jpeg";
 
@@ -135,69 +131,22 @@ export default function Homepage() {
             También puedes escribirme un email a <strong>hola@codecoolture.com</strong>.
           </p>
 
-          <Formik
-            initialValues={{
-              doNotWriteIfHuman: "",
-              email: "",
-              "form-name": "contact",
-              message: "",
-            }}
-            onSubmit={async (values, { resetForm }) => {
-              await fetch("/", {
-                body: new URLSearchParams(values).toString(),
-                headers: {
-                  "Content-Type": "application/x-www-form-urlencoded",
-                },
-                method: "POST",
-              });
+          <Page.ContactForm successMessage="¡Mensaje recibido! Intentaré contestarte en menos de 48 horas.">
+            <Page.ContactForm.Field name="email">
+              <Page.ContactForm.Field.Label>Tu email</Page.ContactForm.Field.Label>
+              <Page.ContactForm.Field.Hint>Lo utilizaré para responderte</Page.ContactForm.Field.Hint>
+            </Page.ContactForm.Field>
 
-              toast.success("¡Mensaje recibido! Intentaré contestarte en menos de 48 horas.", {
-                position: "bottom-center",
-                className: "Toast",
-              });
+            <Page.ContactForm.Field name="message">
+              <Page.ContactForm.Field.Label>Mensaje</Page.ContactForm.Field.Label>
+              <Page.ContactForm.Field.Hint>
+                Este campo es <strong>opcional</strong>, pero puedes utilizarlo para contarme algo sobre ti o,
+                simplemente, saludar :-)
+              </Page.ContactForm.Field.Hint>
+            </Page.ContactForm.Field>
 
-              resetForm();
-            }}
-            validateOnBlur={false}
-            validateOnChange={false}
-            validateOnMount={false}
-            validationSchema={yup.object({
-              email: yup.string().email().required(),
-            })}
-          >
-            {({ errors }) => {
-              return (
-                <Form name="contact" className="Form" data-netlify="true" netlify-honeypot="doNotWriteIfHuman">
-                  <Field name="form-name" type="hidden" />
-
-                  <Field name="doNotWriteIfHuman" type="hidden" />
-
-                  <TextField error={errors.email}>
-                    <TextField.Label>Tu email</TextField.Label>
-
-                    <TextField.Hint>Lo utilizaré para responderte</TextField.Hint>
-
-                    <Field as={TextField.Input} name="email" />
-                  </TextField>
-
-                  <TextField>
-                    <TextField.Label>Mensaje</TextField.Label>
-
-                    <TextField.Hint>
-                      Este campo es <strong>opcional</strong>, pero puedes utilizarlo para contarme algo sobre ti o,
-                      simplemente, saludar :-)
-                    </TextField.Hint>
-
-                    <Field as={TextField.Input} name="message" />
-                  </TextField>
-
-                  <Button variant="solid" className="Form__Submit" type="submit">
-                    Enviar
-                  </Button>
-                </Form>
-              );
-            }}
-          </Formik>
+            <Page.ContactForm.Submit>Enviar</Page.ContactForm.Submit>
+          </Page.ContactForm>
 
           <h2>Material adicional</h2>
 
