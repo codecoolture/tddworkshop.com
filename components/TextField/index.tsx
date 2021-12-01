@@ -24,6 +24,23 @@ TextField.Input = function TextFieldInput({ name, onBlur, onChange, value }: Tex
   );
 };
 
+type TextFieldTextArea = Pick<JSX.IntrinsicElements["textarea"], "name" | "onBlur" | "onChange" | "value"> & {
+  numberOfRows: number;
+};
+
+TextField.TextArea = function TextFieldTextArea({ name, numberOfRows, onBlur, onChange, value }: TextFieldTextArea) {
+  return (
+    <textarea
+      className="TextField__Input"
+      name={name}
+      onBlur={onBlur}
+      onChange={onChange}
+      rows={numberOfRows}
+      value={value}
+    />
+  );
+};
+
 TextField.Error = function TextFieldError(props: { children: React.ReactNode }) {
   return <p className="TextField__Error">{props.children}</p>;
 };

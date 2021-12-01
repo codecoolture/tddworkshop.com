@@ -34,6 +34,12 @@ Field.Input = function FieldInput() {
   return <FormikField as={TextField.Input} name={name} />;
 };
 
+Field.TextArea = function FieldTextArea({ numberOfRows }: { numberOfRows: number }) {
+  const { name } = useContext(FieldContext);
+
+  return <FormikField as={TextField.TextArea} name={name} numberOfRows={numberOfRows} />;
+};
+
 Field.Error = function FieldError(props: { children: React.ReactNode }) {
   const { name } = useContext(FieldContext);
   const { errors } = useFormikContext<Record<string, unknown>>();
