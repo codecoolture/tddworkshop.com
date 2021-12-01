@@ -1,6 +1,6 @@
 .Page__Footer {
   border-top: 1px solid var(--indigo6);
-  padding: 1em 1em 0;
+  padding: 1em 0;
 
   background-color: var(--indigo1);
 }

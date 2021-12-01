@@ -7,3 +7,9 @@
 .Page__Main {
   flex-grow: 1;
 }
+
+.Page__Row {
+  margin: 0 auto;
+  max-width: calc(100% - 2rem);
+  width: 1100px;
+}

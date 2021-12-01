@@ -22,154 +22,158 @@ export default function Homepage() {
 
       <Page.Main>
         <section className="Hero">
-          <p>
-            Aprende la metodología que te ayuda a escribir <strong>mejor software</strong>, de manera{" "}
-            <strong>sostenible</strong>.
-          </p>
+          <Page.Row>
+            <p>
+              Aprende la metodología que te ayuda a escribir <strong>mejor software</strong>, de manera{" "}
+              <strong>sostenible</strong>.
+            </p>
 
-          <div className="Hero__Buttons">
-            <Button variant="outline" href="#workshop" className="Hero__Buttons__Button">
-              Conoce el taller
-            </Button>
+            <div className="Hero__Buttons">
+              <Button variant="outline" href="#workshop" className="Hero__Buttons__Button">
+                Conoce el taller
+              </Button>
 
-            <Button variant="solid" href="#contact" className="Hero__Buttons__Button">
-              Contrátame
-            </Button>
-          </div>
+              <Button variant="solid" href="#contact" className="Hero__Buttons__Button">
+                Contrátame
+              </Button>
+            </div>
+          </Page.Row>
         </section>
 
         <section className="Description">
-          <h2 id="workshop">El taller</h2>
+          <Page.Row>
+            <h2 id="workshop">El taller</h2>
 
-          <p>
-            Formación in-house (cerrada, para una empresa) con{" "}
-            <strong>10 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
-            quieran introducirse a la metodología y disfrutar de un <em>onboarding</em> completo, ameno y honesto
-            (alejado de dogmatismos).
-          </p>
+            <p>
+              Formación in-house (cerrada, para una empresa) con{" "}
+              <strong>10 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
+              quieran introducirse a la metodología y disfrutar de un <em>onboarding</em> completo, ameno y honesto
+              (alejado de dogmatismos).
+            </p>
 
-          <h3>¿Qué aprenderemos?</h3>
+            <h3>¿Qué aprenderemos?</h3>
 
-          <List>
-            <List.Item>Qué es TDD y cuáles son sus motivaciones y objetivos</List.Item>
-            <List.Item>
-              Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas)
-            </List.Item>
-            <List.Item>
-              Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>)
-            </List.Item>
-            <List.Item>
-              Conceptos generales sobre buen diseño de software y desarrollo orientado a objetos (también principios{" "}
-              <Link href="https://en.wikipedia.org/wiki/SOLID">
-                <b>SOLID</b>
+            <List>
+              <List.Item>Qué es TDD y cuáles son sus motivaciones y objetivos</List.Item>
+              <List.Item>
+                Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas)
+              </List.Item>
+              <List.Item>
+                Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>)
+              </List.Item>
+              <List.Item>
+                Conceptos generales sobre buen diseño de software y desarrollo orientado a objetos (también principios{" "}
+                <Link href="https://en.wikipedia.org/wiki/SOLID">
+                  <b>SOLID</b>
+                </Link>
+                )
+              </List.Item>
+              <List.Item>
+                Cómo introducir TDD en una base de código <em>legacy</em> (y de qué herramientas disponemos)
+              </List.Item>
+            </List>
+
+            <h3>¿Cómo se desarrolla el taller?</h3>
+
+            <p>
+              Sólo hay una manera de aprender TDD: <strong>practicar, practicar y practicar</strong>. Por tanto, la
+              formación será eminentemente práctica; con tiempo para trabajo individual y sesiones conjuntas de{" "}
+              <em>live coding</em>. Además, resolveré las dudas del equipo tanto durante la formación como después (vía
+              email).
+            </p>
+
+            <p>
+              Por las circustancias actuales (COVID-19), las formaciones se realizarán de manera telemática, a través de{" "}
+              <strong>herramientas online y vídeoconferencia</strong>.
+            </p>
+
+            <p>Las 10 horas de la formación se pueden repartir a lo largo de 4 ó 5 días.</p>
+
+            <h3>Tecnologías y lenguajes de programación</h3>
+
+            <p>
+              El taller utiliza JavaScript/TypeScript como base (para los ejemplos), pero la formación se podrá
+              desarrollar utilizando <strong>cualquier lenguaje</strong>.
+            </p>
+
+            <p>
+              Además, el taller es agnóstico de front-end o back-end aunque se puede ajustar a las necesidades de cada
+              grupo (por ejemplo, haciendo TDD sobre componentes React si la formación se imparte a un equipo que lo
+              utilice).
+            </p>
+
+            <h3>Precio y aforo</h3>
+
+            <p>
+              El precio del taller es de <strong>250EUR/persona</strong> (+ IVA), para un mínimo de 5 y un máximo de 10
+              personas por sesión.
+            </p>
+
+            <h2 id="tdd">¿Por qué TDD?</h2>
+
+            <p>
+              TDD (del inglés: <em>test-driven development</em>) es una metodología que consiste en aplicar pequeños
+              ciclos de desarrollo orientados a resolver casos de prueba. Como beneficio, ganaremos en productividad
+              (siempre estamos desarrollando con un objetivo claro: hacer pasar la siguiente prueba), escribiendo a su
+              vez código bien diseñado, fácil de probar y mantener.
+            </p>
+
+            <h2 id="contact">Contacto</h2>
+
+            <p>
+              Si quieres más información sobre el taller, puedes escribirme a <strong>hola@codecoolture.com</strong> o
+              utilizar Twitter:{" "}
+              <Link href="https://twitter.com/codecoolture" target="_blank" rel="noreferrer">
+                <strong>@codecoolture</strong>
               </Link>
-              )
-            </List.Item>
-            <List.Item>
-              Cómo introducir TDD en una base de código <em>legacy</em> (y de qué herramientas disponemos)
-            </List.Item>
-          </List>
+            </p>
 
-          <h3>¿Cómo se desarrolla el taller?</h3>
+            <h2 id="about">Sobre mí</h2>
 
-          <p>
-            Sólo hay una manera de aprender TDD: <strong>practicar, practicar y practicar</strong>. Por tanto, la
-            formación será eminentemente práctica; con tiempo para trabajo individual y sesiones conjuntas de{" "}
-            <em>live coding</em>. Además, resolveré las dudas del equipo tanto durante la formación como después (vía
-            email).
-          </p>
+            <p>
+              ¡Hola! 👋 Soy{" "}
+              <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
+                Sergio
+              </Link>{" "}
+              y llevo desarrollando software profesionalmente desde hace una década, especialmente en el contexto de
+              aplicaciones web (tanto <em>back-end</em> como <em>front-end</em>). Desde hace varios años, compagino mi
+              actividad como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas
+              prácticas de desarrollo de software.
+            </p>
 
-          <p>
-            Por las circustancias actuales (COVID-19), las formaciones se realizarán de manera telemática, a través de{" "}
-            <strong>herramientas online y vídeoconferencia</strong>.
-          </p>
+            <h3>Material adicional</h3>
 
-          <p>Las 10 horas de la formación se pueden repartir a lo largo de 4 ó 5 días.</p>
+            <List>
+              <List.Item>
+                <Link href="https://bit.ly/34ZnpuO" target="_blank" rel="noreferrer">
+                  Lista de lecturas recomendadas para estudiar y aprender TDD
+                </Link>
+              </List.Item>
 
-          <h3>Tecnologías y lenguajes de programación</h3>
+              <List.Item>
+                <Link
+                  href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Aplicando (A)TDD para resolver El Juego de la Vida
+                </Link>
+              </List.Item>
+              <List.Item>
+                <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
+                  GitHub: codecoolture/react-atdd-playground
+                </Link>
+              </List.Item>
+            </List>
 
-          <p>
-            El taller utiliza JavaScript/TypeScript como base (para los ejemplos), pero la formación se podrá
-            desarrollar utilizando <strong>cualquier lenguaje</strong>.
-          </p>
-
-          <p>
-            Además, el taller es agnóstico de front-end o back-end aunque se puede ajustar a las necesidades de cada
-            grupo (por ejemplo, haciendo TDD sobre componentes React si la formación se imparte a un equipo que lo
-            utilice).
-          </p>
-
-          <h3>Precio y aforo</h3>
-
-          <p>
-            El precio del taller es de <strong>250EUR/persona</strong> (+ IVA), para un mínimo de 5 y un máximo de 10
-            personas por sesión.
-          </p>
-
-          <h2 id="tdd">¿Por qué TDD?</h2>
-
-          <p>
-            TDD (del inglés: <em>test-driven development</em>) es una metodología que consiste en aplicar pequeños
-            ciclos de desarrollo orientados a resolver casos de prueba. Como beneficio, ganaremos en productividad
-            (siempre estamos desarrollando con un objetivo claro: hacer pasar la siguiente prueba), escribiendo a su vez
-            código bien diseñado, fácil de probar y mantener.
-          </p>
-
-          <h2 id="contact">Contacto</h2>
-
-          <p>
-            Si quieres más información sobre el taller, puedes escribirme a <strong>hola@codecoolture.com</strong> o
-            utilizar Twitter:{" "}
-            <Link href="https://twitter.com/codecoolture" target="_blank" rel="noreferrer">
-              <strong>@codecoolture</strong>
-            </Link>
-          </p>
-
-          <h2 id="about">Sobre mí</h2>
-
-          <p>
-            ¡Hola! 👋 Soy{" "}
-            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
-              Sergio
-            </Link>{" "}
-            y llevo desarrollando software profesionalmente desde hace una década, especialmente en el contexto de
-            aplicaciones web (tanto <em>back-end</em> como <em>front-end</em>). Desde hace varios años, compagino mi
-            actividad como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas
-            prácticas de desarrollo de software.
-          </p>
-
-          <h3>Material adicional</h3>
-
-          <List>
-            <List.Item>
-              <Link href="https://bit.ly/34ZnpuO" target="_blank" rel="noreferrer">
-                Lista de lecturas recomendadas para estudiar y aprender TDD
-              </Link>
-            </List.Item>
-
-            <List.Item>
-              <Link
-                href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Aplicando (A)TDD para resolver El Juego de la Vida
-              </Link>
-            </List.Item>
-            <List.Item>
-              <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
-                GitHub: codecoolture/react-atdd-playground
-              </Link>
-            </List.Item>
-          </List>
-
-          <div className="Picture">
-            <Figure
-              src={gdcrImg}
-              alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid"
-              title="En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de software (2019)."
-            />
-          </div>
+            <div className="Picture">
+              <Figure
+                src={gdcrImg}
+                alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid"
+                title="En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de software (2019)."
+              />
+            </div>
+          </Page.Row>
         </section>
       </Page.Main>
 

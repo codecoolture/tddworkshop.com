@@ -18,4 +18,8 @@ Page.Main = function Main({ children }: { children: React.ReactNode }) {
   return <main className="Page__Main">{children}</main>;
 };
 
+Page.Row = function PageRow({ children }: { children: React.ReactNode }) {
+  return <div className="Page__Row">{children}</div>;
+};
+
 Page.Seo = Seo;

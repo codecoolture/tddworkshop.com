@@ -1,10 +1,15 @@
 import { ReactNode } from "react";
+import { Page } from "../..";
 import { Code } from "../../../../components/Code";
 import { Link, LinkProps } from "../../../../components/Link";
 import { Underline } from "../../../../components/Underline";
 
 export function Footer({ children }: { children: ReactNode }) {
-  return <footer className="Page__Footer">{children}</footer>;
+  return (
+    <footer className="Page__Footer">
+      <Page.Row>{children}</Page.Row>
+    </footer>
+  );
 }
 
 Footer.Text = function FooterText({ children }: { children: ReactNode }) {
