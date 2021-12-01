@@ -24,8 +24,8 @@ export default function Homepage() {
         <section className="Hero">
           <Page.Row>
             <p>
-              Aprende la metodología que te ayuda a escribir <strong>mejor software</strong>, de manera{" "}
-              <strong>sostenible</strong>.
+              Aprende a escribir <strong>mejor software</strong>,<br />
+              de manera <strong>sostenible</strong>.
             </p>
 
             <div className="Hero__Buttons">
