@@ -47,8 +47,8 @@ export default function Homepage() {
             <p>
               Formación in-house (cerrada, para una empresa) con{" "}
               <strong>10 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
-              quieran introducirse a la metodología y disfrutar de un <em>onboarding</em> completo, ameno y honesto
-              (alejado de dogmatismos).
+              quieran introducirse a la metodología y disfrutar de un acercamiento completo, ameno y honesto (alejado de
+              dogmatismos).
             </p>
 
             <h3>¿Qué aprenderemos?</h3>
@@ -102,11 +102,10 @@ export default function Homepage() {
               utilice).
             </p>
 
-            <h3>Precio y aforo</h3>
+            <h3>Precio</h3>
 
             <p>
-              El precio del taller es de <strong>250EUR/persona</strong> (+ IVA), para un mínimo de 5 y un máximo de 10
-              personas por sesión.
+              El precio del taller es de <strong>250EUR/persona</strong> (+ IVA).
             </p>
 
             <h2 id="tdd">¿Por qué TDD?</h2>
@@ -118,30 +117,49 @@ export default function Homepage() {
               vez código bien diseñado, fácil de probar y mantener.
             </p>
 
-            <h2 id="contact">Contacto</h2>
-
-            <p>
-              Si quieres más información sobre el taller, puedes escribirme a <strong>hola@codecoolture.com</strong> o
-              utilizar Twitter:{" "}
-              <Link href="https://twitter.com/codecoolture" target="_blank" rel="noreferrer">
-                <strong>@codecoolture</strong>
-              </Link>
-            </p>
-
-            <h2 id="about">Sobre mí</h2>
+            <h2 id="contact">Contrátame</h2>
 
             <p>
               ¡Hola! 👋 Soy{" "}
               <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
                 Sergio
               </Link>{" "}
-              y llevo desarrollando software profesionalmente desde hace una década, especialmente en el contexto de
-              aplicaciones web (tanto <em>back-end</em> como <em>front-end</em>). Desde hace varios años, compagino mi
-              actividad como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas
-              prácticas de desarrollo de software.
+              y llevo una década desarrollando software profesionalmente. Desde hace varios años, compagino mi actividad
+              como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas prácticas
+              de ingeniería del software (continuous deployment, test-driven development).
             </p>
 
-            <h3>Material adicional</h3>
+            <p>
+              Si quieres contratar esta formación para tu empresa, escríbeme un mensaje y te responderé lo antes
+              posible. También puedes escribirme un email a <strong>hola@codecoolture.com</strong>.
+            </p>
+
+            <Page.ContactForm successMessage="¡Gracias! Mensaje recibido.">
+              <Page.ContactForm.Field name="email">
+                <Page.ContactForm.Field.Label>Tu email</Page.ContactForm.Field.Label>
+
+                <Page.ContactForm.Field.Hint>Lo utilizaré para responderte</Page.ContactForm.Field.Hint>
+
+                <Page.ContactForm.Field.Input />
+
+                <Page.ContactForm.Field.Error>Por favor, introduce un email válido.</Page.ContactForm.Field.Error>
+              </Page.ContactForm.Field>
+
+              <Page.ContactForm.Field name="message">
+                <Page.ContactForm.Field.Label>Mensaje</Page.ContactForm.Field.Label>
+
+                <Page.ContactForm.Field.Hint>
+                  Este campo es <strong>opcional</strong>, pero puedes utilizarlo para contarme algo sobre ti o,
+                  simplemente, saludar :-)
+                </Page.ContactForm.Field.Hint>
+
+                <Page.ContactForm.Field.TextArea numberOfRows={10} />
+              </Page.ContactForm.Field>
+
+              <Page.ContactForm.Submit>Enviar</Page.ContactForm.Submit>
+            </Page.ContactForm>
+
+            <h2>Material adicional</h2>
 
             <List>
               <List.Item>
