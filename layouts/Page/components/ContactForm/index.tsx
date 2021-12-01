@@ -1,9 +1,9 @@
-import { Field as FormikField, Form, Formik, useFormikContext } from "formik";
+import { Field as FormikField, Form, Formik } from "formik";
 import React from "react";
 import { toast } from "react-hot-toast";
 import * as yup from "yup";
 import { Button } from "../../../../components/Button";
-import { TextField } from "../../../../components/TextField";
+import { Field } from "./Field";
 
 type ContactFormValues = {
   doNotWriteIfHuman: string;
@@ -11,34 +11,6 @@ type ContactFormValues = {
   "form-name": string;
   message: string;
 };
-
-function Field({ children, name }: { children: React.ReactNode; name: "email" | "message" }) {
-  const { errors } = useFormikContext<ContactFormValues>();
-
-  return (
-    <TextField error={errors[name]}>
-      {children}
-
-      <FormikField as={TextField.Input} name={name} />
-    </TextField>
-  );
-}
-
-Field.Label = function FieldLabel({ children }: { children: string }) {
-  return <TextField.Label>{children}</TextField.Label>;
-};
-
-Field.Hint = function FieldHint({ children }: { children: React.ReactNode }) {
-  return <TextField.Hint>{children}</TextField.Hint>;
-};
-
-function Submit({ children }: { children: string }) {
-  return (
-    <Button variant="solid" className="Page__ContactForm__Submit" type="submit">
-      {children}
-    </Button>
-  );
-}
 
 export function ContactForm({ children, successMessage }: { children: React.ReactNode; successMessage: string }) {
   return (
@@ -87,5 +59,12 @@ export function ContactForm({ children, successMessage }: { children: React.Reac
   );
 }
 
+ContactForm.Submit = function ContactFormSubmit({ children }: { children: string }) {
+  return (
+    <Button variant="solid" className="Page__ContactForm__Submit" type="submit">
+      {children}
+    </Button>
+  );
+};
+
 ContactForm.Field = Field;
-ContactForm.Submit = Submit;

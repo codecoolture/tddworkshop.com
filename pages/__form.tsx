@@ -134,15 +134,21 @@ export default function Homepage() {
           <Page.ContactForm successMessage="¡Mensaje recibido! Intentaré contestarte en menos de 48 horas.">
             <Page.ContactForm.Field name="email">
               <Page.ContactForm.Field.Label>Tu email</Page.ContactForm.Field.Label>
+
               <Page.ContactForm.Field.Hint>Lo utilizaré para responderte</Page.ContactForm.Field.Hint>
+
+              <Page.ContactForm.Field.Input />
             </Page.ContactForm.Field>
 
             <Page.ContactForm.Field name="message">
               <Page.ContactForm.Field.Label>Mensaje</Page.ContactForm.Field.Label>
+
               <Page.ContactForm.Field.Hint>
                 Este campo es <strong>opcional</strong>, pero puedes utilizarlo para contarme algo sobre ti o,
                 simplemente, saludar :-)
               </Page.ContactForm.Field.Hint>
+
+              <Page.ContactForm.Field.Input />
             </Page.ContactForm.Field>
 
             <Page.ContactForm.Submit>Enviar</Page.ContactForm.Submit>
