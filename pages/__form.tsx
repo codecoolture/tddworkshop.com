@@ -131,13 +131,15 @@ export default function Homepage() {
             También puedes escribirme un email a <strong>hola@codecoolture.com</strong>.
           </p>
 
-          <Page.ContactForm successMessage="¡Mensaje recibido! Intentaré contestarte en menos de 48 horas.">
+          <Page.ContactForm successMessage="¡Gracias! Mensaje recibido.">
             <Page.ContactForm.Field name="email">
               <Page.ContactForm.Field.Label>Tu email</Page.ContactForm.Field.Label>
 
               <Page.ContactForm.Field.Hint>Lo utilizaré para responderte</Page.ContactForm.Field.Hint>
 
               <Page.ContactForm.Field.Input />
+
+              <Page.ContactForm.Field.Error>Por favor, introduce un email válido.</Page.ContactForm.Field.Error>
             </Page.ContactForm.Field>
 
             <Page.ContactForm.Field name="message">

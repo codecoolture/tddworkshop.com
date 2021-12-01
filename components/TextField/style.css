@@ -17,7 +17,7 @@
 }
 
 .TextField--With-Errors {
-  border-color: var(--red7) !important;
+  border-color: var(--red8) !important;
 }
 
 .TextField__Hint {
@@ -35,4 +35,15 @@
   font-family: var(--ff-sans-serif);
 
   outline: none;
+}
+
+.TextField__Error {
+  color: var(--red11);
+}
+
+/*
+  TODO: Fix ".Description p" to avoid this hack.
+*/
+.TextField__Error.TextField__Error {
+  margin: 0;
 }

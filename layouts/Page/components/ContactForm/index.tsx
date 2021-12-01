@@ -6,9 +6,10 @@ import { Button } from "../../../../components/Button";
 import { Field } from "./Field";
 
 type ContactFormValues = {
+  "form-name": string;
+
   doNotWriteIfHuman: string;
   email: string;
-  "form-name": string;
   message: string;
 };
 
@@ -16,9 +17,10 @@ export function ContactForm({ children, successMessage }: { children: React.Reac
   return (
     <Formik<ContactFormValues>
       initialValues={{
+        "form-name": "contact",
+
         doNotWriteIfHuman: "",
         email: "",
-        "form-name": "contact",
         message: "",
       }}
       onSubmit={async (values, { resetForm }) => {
@@ -31,7 +33,7 @@ export function ContactForm({ children, successMessage }: { children: React.Reac
         });
 
         toast.success(successMessage, {
-          position: "bottom-center",
+          duration: 5000,
           className: "Page__ContactForm__Toast",
         });
 

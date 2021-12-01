@@ -1,7 +1,11 @@
-export function TextField({ children, error }: { children: React.ReactNode; error?: string }) {
+export function TextField({ children, error }: { children: React.ReactNode; error?: unknown }) {
   const classes = ["TextField", undefined !== error && "TextField--With-Errors"].filter(Boolean).join(" ");
 
-  return <label className={classes}>{children}</label>;
+  return (
+    <div>
+      <label className={classes}>{children}</label>
+    </div>
+  );
 }
 
 TextField.Label = function TextFieldLabel(props: { children: string }) {
@@ -18,4 +22,8 @@ TextField.Input = function TextFieldInput({ name, onBlur, onChange, value }: Tex
   return (
     <input className="TextField__Input" type="text" name={name} onBlur={onBlur} onChange={onChange} value={value} />
   );
+};
+
+TextField.Error = function TextFieldError(props: { children: React.ReactNode }) {
+  return <p className="TextField__Error">{props.children}</p>;
 };

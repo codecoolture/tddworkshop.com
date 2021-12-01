@@ -1,11 +1,11 @@
-import { Field as FormikField, FormikValues, useFormikContext } from "formik";
+import { Field as FormikField, useFormikContext } from "formik";
 import React, { createContext, useContext } from "react";
 import { TextField } from "../../../../components/TextField";
 
 const FieldContext = createContext({ name: "" });
 
-export function Field<Values extends FormikValues>(props: { children: React.ReactNode; name: keyof Values }) {
-  const { errors } = useFormikContext<Values>();
+export function Field(props: { children: React.ReactNode; name: string }) {
+  const { errors } = useFormikContext<Record<string, unknown>>();
 
   const error = errors[props.name];
 
@@ -32,4 +32,17 @@ Field.Input = function FieldInput() {
   const { name } = useContext(FieldContext);
 
   return <FormikField as={TextField.Input} name={name} />;
+};
+
+Field.Error = function FieldError(props: { children: React.ReactNode }) {
+  const { name } = useContext(FieldContext);
+  const { errors } = useFormikContext<Record<string, unknown>>();
+
+  const error = errors[name];
+
+  if (undefined === error) {
+    return null;
+  }
+
+  return <TextField.Error>{props.children}</TextField.Error>;
 };
