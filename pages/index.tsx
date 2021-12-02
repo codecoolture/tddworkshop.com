@@ -183,11 +183,14 @@ export default function Homepage() {
           </List>
 
           <div className="Picture">
-            <Figure
-              src={gdcrImg}
-              alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid"
-              title="En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de software (2019)."
-            />
+            <Figure>
+              <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
+
+              <Figure.Caption>
+                En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de
+                software (2019).
+              </Figure.Caption>
+            </Figure>
           </div>
         </Page.Row>
       </Page.Main>

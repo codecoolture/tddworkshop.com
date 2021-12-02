@@ -1,17 +1,17 @@
 import Image, { ImageProps } from "next/image";
 
 export interface FigureProps {
-  alt: string;
-  src: ImageProps["src"];
-  title: string;
+  children: React.ReactNode;
 }
 
 export function Figure(props: FigureProps) {
-  return (
-    <figure className="Figure">
-      <Image src={props.src} alt={props.alt} title={props.title} placeholder="blur" />
-
-      <figcaption className="Figure__Caption">{props.title}</figcaption>
-    </figure>
-  );
+  return <figure className="Figure">{props.children}</figure>;
 }
+
+Figure.Image = function FigureImage(props: Pick<ImageProps, "src" | "alt">) {
+  return <Image src={props.src} alt={props.alt} placeholder="blur" />;
+};
+
+Figure.Caption = function FigureCaption(props: { children: React.ReactNode }) {
+  return <figcaption className="Figure__Caption">{props.children}</figcaption>;
+};
