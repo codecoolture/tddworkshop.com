@@ -1,4 +1,4 @@
-type ButtonProps = {
+export type ButtonProps = {
   children: string;
   className?: string;
   href?: string;

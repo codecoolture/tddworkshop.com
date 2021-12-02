@@ -16,6 +16,7 @@
 
 @import "../layouts/Page/style.css";
 @import "../layouts/Page/components/ContactForm/style.css";
+@import "../layouts/Page/components/Header/style.css";
 @import "../layouts/Page/components/Footer/style.css";
 
 @import "../pages/style.css";

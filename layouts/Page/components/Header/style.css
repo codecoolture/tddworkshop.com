@@ -1,0 +1,47 @@
+.Page__Header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(50vh - 2em);
+  padding: 3em 0;
+  position: relative;
+
+  background-color: var(--gray2);
+}
+
+.Page__Header__Text {
+  font-size: var(--fs-xl);
+  letter-spacing: -1px;
+  line-height: 1.15;
+
+  font-family: var(--ff-sans-serif);
+  font-weight: 700;
+}
+
+.Page__Header__Text strong {
+  color: var(--indigo9);
+}
+
+.Page__Header__Buttons {
+  display: grid;
+  margin-top: 2em;
+  row-gap: 0.5em;
+}
+
+.Page__Header__Button {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 750px) {
+  .Page__Header {
+    padding: 5em 0;
+  }
+
+  .Page__Header__Buttons {
+    column-gap: 0.5em;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, min-content);
+    justify-items: self-start;
+  }
+}

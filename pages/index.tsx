@@ -1,4 +1,3 @@
-import { Button } from "../components/Button";
 import { Figure } from "../components/Figure";
 import { Link } from "../components/Link";
 import { List } from "../components/List";
@@ -21,24 +20,24 @@ export default function Homepage() {
       </Page.Seo>
 
       <Page.Main>
-        <section className="Hero">
+        <Page.Header>
           <Page.Row>
-            <p>
+            <Page.Header.Text>
               Aprende a escribir <strong>mejor software</strong>,<br />
               de manera <strong>sostenible</strong>.
-            </p>
+            </Page.Header.Text>
 
-            <div className="Hero__Buttons">
-              <Button variant="outline" href="#workshop" className="Hero__Buttons__Button">
+            <Page.Header.Buttons>
+              <Page.Header.Button variant="outline" href="#workshop">
                 Conoce el taller
-              </Button>
+              </Page.Header.Button>
 
-              <Button variant="solid" href="#contact" className="Hero__Buttons__Button">
+              <Page.Header.Button variant="solid" href="#contact">
                 Contrátame
-              </Button>
-            </div>
+              </Page.Header.Button>
+            </Page.Header.Buttons>
           </Page.Row>
-        </section>
+        </Page.Header>
 
         <section className="Description">
           <Page.Row>

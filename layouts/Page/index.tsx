@@ -1,5 +1,6 @@
 import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 import { Seo } from "./components/Seo";
 
 export interface PageProps {
@@ -9,6 +10,8 @@ export interface PageProps {
 export function Page({ children }: PageProps) {
   return <div className="Page">{children}</div>;
 }
+
+Page.Header = Header;
 
 Page.ContactForm = ContactForm;
 
