@@ -1,0 +1,9 @@
+.Page__Subheading {
+  display: inline-block;
+  font-size: var(--fs-m);
+  margin: 1em 0 0.5em;
+
+  background-color: var(--yellow3);
+  color: var(--yellow11);
+  text-transform: uppercase;
+}

@@ -1,29 +1,3 @@
-.Description {
-  padding: 1em 0;
-}
-
-.Description h2 {
-  margin: 1em 0 0.5em;
-}
-
-.Description h3 {
-  display: inline-block;
-  font-size: var(--fs-m);
-  margin: 1em 0 0.5em;
-
-  background-color: var(--yellow3);
-  color: var(--yellow11);
-  text-transform: uppercase;
-}
-
-.Description p {
-  margin-bottom: 1em;
-}
-
-.Description ul p {
-  margin: 0;
-}
-
 .Picture {
   max-width: 100%;
 }
