@@ -5,17 +5,9 @@ import * as yup from "yup";
 import { Button } from "../../../../components/Button";
 import { Field } from "./Field";
 
-type ContactFormValues = {
-  "form-name": string;
-
-  doNotWriteIfHuman: string;
-  email: string;
-  message: string;
-};
-
-export function ContactForm({ children, successMessage }: { children: React.ReactNode; successMessage: string }) {
+export function ContactForm({ children, onSuccessMessage }: { children: React.ReactNode; onSuccessMessage: string }) {
   return (
-    <Formik<ContactFormValues>
+    <Formik
       initialValues={{
         "form-name": "contact",
 
@@ -32,7 +24,7 @@ export function ContactForm({ children, successMessage }: { children: React.Reac
           method: "POST",
         });
 
-        toast.success(successMessage, {
+        toast.success(onSuccessMessage, {
           duration: 5000,
           className: "Page__ContactForm__Toast",
         });
