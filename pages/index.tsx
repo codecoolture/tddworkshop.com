@@ -53,12 +53,15 @@ export default function Homepage() {
 
           <List>
             <List.Item>Qué es TDD y cuáles son sus motivaciones y objetivos</List.Item>
+
             <List.Item>
               Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas)
             </List.Item>
+
             <List.Item>
               Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>)
             </List.Item>
+
             <List.Item>
               Conceptos generales sobre buen diseño de software y desarrollo orientado a objetos (también principios{" "}
               <Link href="https://en.wikipedia.org/wiki/SOLID">
@@ -66,6 +69,7 @@ export default function Homepage() {
               </Link>
               )
             </List.Item>
+
             <List.Item>
               Cómo introducir TDD en una base de código <em>legacy</em> (y de qué herramientas disponemos)
             </List.Item>
@@ -182,16 +186,14 @@ export default function Homepage() {
             </List.Item>
           </List>
 
-          <div className="Picture">
-            <Figure>
-              <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
+          <Figure>
+            <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
 
-              <Figure.Caption>
-                En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de
-                software (2019).
-              </Figure.Caption>
-            </Figure>
-          </div>
+            <Figure.Caption>
+              En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de
+              software (2019).
+            </Figure.Caption>
+          </Figure>
         </Page.Row>
       </Page.Main>
 
