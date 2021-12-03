@@ -12,7 +12,8 @@
   transition: all ease-in 250ms;
 }
 
-.TextField:hover {
+.TextField:hover,
+.TextField:focus-within {
   border-color: var(--gray8);
 }
 
