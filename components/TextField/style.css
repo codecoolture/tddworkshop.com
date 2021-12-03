@@ -40,10 +40,3 @@
 .TextField__Error {
   color: var(--red11);
 }
-
-/*
-  TODO: Fix ".Description p" to avoid this hack.
-*/
-.TextField__Error.TextField__Error {
-  margin: 0;
-}
