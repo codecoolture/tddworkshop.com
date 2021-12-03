@@ -13,7 +13,8 @@ export default function Homepage() {
         <Page.Seo.Title>Escribe mejor software, de manera sostenible</Page.Seo.Title>
 
         <Page.Seo.Description>
-          Descubre y aprende TDD a través de una formación práctica y completa. Sin bullshit.
+          Descubre y aprende TDD a través de una formación práctica y completa. Basada en experiencia real y alejada de
+          dogmatismos.
         </Page.Seo.Description>
 
         <Page.Seo.Image>https://tddworkshop.com/static/img/social_es.png</Page.Seo.Image>
@@ -43,8 +44,7 @@ export default function Homepage() {
           <Page.Heading id="workshop">El taller</Page.Heading>
 
           <Page.Text>
-            Formación in-house (cerrada, para una empresa) con{" "}
-            <strong>10 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
+            <strong>16 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
             quieran introducirse a la metodología y disfrutar de un acercamiento completo, ameno y honesto (alejado de
             dogmatismos).
           </Page.Text>
@@ -62,16 +62,10 @@ export default function Homepage() {
               Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>)
             </List.Item>
 
-            <List.Item>
-              Conceptos generales sobre buen diseño de software y desarrollo orientado a objetos (también principios{" "}
-              <Link href="https://en.wikipedia.org/wiki/SOLID">
-                <b>SOLID</b>
-              </Link>
-              )
-            </List.Item>
+            <List.Item>Conceptos generales sobre buen diseño de software</List.Item>
 
             <List.Item>
-              Cómo introducir TDD en una base de código <em>legacy</em> (y de qué herramientas disponemos)
+              Cómo introducir TDD en una base de código ya existente (y de qué herramientas disponemos)
             </List.Item>
           </List>
 
@@ -79,23 +73,20 @@ export default function Homepage() {
 
           <Page.Text>
             Sólo hay una manera de aprender TDD: <strong>practicar, practicar y practicar</strong>. Por tanto, la
-            formación será eminentemente práctica; con tiempo para trabajo individual y sesiones conjuntas de{" "}
-            <em>live coding</em>. Además, resolveré las dudas del equipo tanto durante la formación como después (vía
-            email).
+            formación será eminentemente práctica; con tiempo para programar y sesiones conjuntas de{" "}
+            <em>live coding</em>.
           </Page.Text>
 
           <Page.Text>
             Por las circustancias actuales (COVID-19), las formaciones se realizarán de manera telemática, a través de{" "}
-            <strong>herramientas online y vídeoconferencia</strong>.
+            <strong>herramientas online y vídeoconferencia</strong> y se repartirá a lo largo de varios días.
           </Page.Text>
-
-          <Page.Text>Las 10 horas de la formación se pueden repartir a lo largo de 4 ó 5 días.</Page.Text>
 
           <Page.Subheading>Tecnologías y lenguajes de programación</Page.Subheading>
 
           <Page.Text>
-            El taller utiliza JavaScript/TypeScript como base (para los ejemplos), pero la formación se podrá
-            desarrollar utilizando <strong>cualquier lenguaje</strong>.
+            La formación se puede desarrollar utilizando prácticamente <strong>cualquier lenguaje</strong>, pero los
+            ejemplos y las sesiones de <em>live coding</em> utilizarán JavaScript/TypeScript.
           </Page.Text>
 
           <Page.Text>
@@ -119,7 +110,32 @@ export default function Homepage() {
             código bien diseñado, fácil de probar y mantener.
           </Page.Text>
 
-          <Page.Heading id="contact">Contrátame</Page.Heading>
+          <Page.Subheading>Enlaces y materiales de interés</Page.Subheading>
+
+          <List>
+            <List.Item>
+              <Link href="https://bit.ly/34ZnpuO" target="_blank" rel="noreferrer">
+                Lista de lecturas recomendadas para estudiar y aprender TDD
+              </Link>
+            </List.Item>
+
+            <List.Item>
+              <Link
+                href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Aplicando (A)TDD para resolver El Juego de la Vida
+              </Link>
+            </List.Item>
+            <List.Item>
+              <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
+                GitHub: codecoolture/react-atdd-playground
+              </Link>
+            </List.Item>
+          </List>
+
+          <Page.Heading id="contact">Contacto</Page.Heading>
 
           <Page.Text>
             ¡Hola! 👋 Soy{" "}
@@ -160,31 +176,6 @@ export default function Homepage() {
 
             <Page.ContactForm.Submit>Enviar</Page.ContactForm.Submit>
           </Page.ContactForm>
-
-          <Page.Heading>Material adicional</Page.Heading>
-
-          <List>
-            <List.Item>
-              <Link href="https://bit.ly/34ZnpuO" target="_blank" rel="noreferrer">
-                Lista de lecturas recomendadas para estudiar y aprender TDD
-              </Link>
-            </List.Item>
-
-            <List.Item>
-              <Link
-                href="https://codecoolture.com/blog/applying-atdd-to-game-of-life/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Aplicando (A)TDD para resolver El Juego de la Vida
-              </Link>
-            </List.Item>
-            <List.Item>
-              <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
-                GitHub: codecoolture/react-atdd-playground
-              </Link>
-            </List.Item>
-          </List>
 
           <Figure>
             <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
