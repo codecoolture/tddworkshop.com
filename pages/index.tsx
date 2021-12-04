@@ -171,7 +171,7 @@ export default function Homepage() {
                 simplemente, saludar :-)
               </Page.ContactForm.Field.Hint>
 
-              <Page.ContactForm.Field.TextArea numberOfRows={10} />
+              <Page.ContactForm.Field.TextArea numberOfRows={5} />
             </Page.ContactForm.Field>
 
             <Page.ContactForm.Submit>Enviar</Page.ContactForm.Submit>

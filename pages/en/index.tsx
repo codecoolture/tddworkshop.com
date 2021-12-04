@@ -172,7 +172,7 @@ export default function Homepage() {
                 project, or say hi :-)
               </Page.ContactForm.Field.Hint>
 
-              <Page.ContactForm.Field.TextArea numberOfRows={10} />
+              <Page.ContactForm.Field.TextArea numberOfRows={5} />
             </Page.ContactForm.Field>
 
             <Page.ContactForm.Submit>Send your message</Page.ContactForm.Submit>
