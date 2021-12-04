@@ -152,6 +152,8 @@ export default function Homepage() {
             También puedes escribirme un email a <strong>hola@codecoolture.com</strong>.
           </Page.Text>
 
+          <Page.Subheading>¿Hablamos?</Page.Subheading>
+
           <Page.ContactForm onSuccessMessage="¡Gracias! Mensaje recibido.">
             <Page.ContactForm.Field name="email">
               <Page.ContactForm.Field.Label>Tu email</Page.ContactForm.Field.Label>

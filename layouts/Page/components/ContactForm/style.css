@@ -1,5 +1,6 @@
 .Page__ContactForm {
   display: grid;
+  margin: 1rem 0;
   row-gap: 1rem;
 }
 
