@@ -1,6 +1,6 @@
 .Page__ContactForm {
   display: grid;
-  row-gap: 1em;
+  row-gap: 1rem;
 }
 
 .Page__ContactForm__Submit {

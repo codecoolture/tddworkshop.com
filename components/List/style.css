@@ -9,7 +9,7 @@
 }
 
 .List__Item:not(:first-of-type) {
-  margin-top: 0.35em;
+  margin-top: 0.35rem;
 }
 
 .List__Item::before {
@@ -18,9 +18,9 @@
   box-sizing: border-box;
   border: 0.1em solid var(--gray6);
   flex-shrink: 0;
-  height: 0.75em;
+  height: 0.75rem;
   margin-right: 10px;
-  width: 0.75em;
+  width: 0.75rem;
   background-color: var(--gray3);
   border-radius: 100%;
 

@@ -2,7 +2,7 @@
   border: 2px solid var(--gray6);
   display: block;
   font-size: var(--fs-m);
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
 
   appearance: none;
   background-color: var(--gray3);

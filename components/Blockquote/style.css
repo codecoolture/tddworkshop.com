@@ -1,7 +1,7 @@
 .Blockquote {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  padding: 0 0.5em;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
 
   color: var(--gray11);
   font-style: italic;
