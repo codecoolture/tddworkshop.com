@@ -30,6 +30,8 @@ Footer.Link = function FooterLink({ children, ...props }: Pick<LinkProps, "child
   );
 };
 
-Footer.Copy = function FooterCopy({ children }: { children: ReactNode }) {
-  return <Code className="Page__Footer__Copy">{children}</Code>;
+Footer.Copy = function FooterCopy({ children }: { children: (year: string) => React.ReactNode }) {
+  const year = new Date().getFullYear();
+
+  return <Code className="Page__Footer__Copy">{children(year.toString())}</Code>;
 };

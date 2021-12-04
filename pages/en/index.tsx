@@ -203,7 +203,7 @@ export default function Homepage() {
           </Page.Footer.Link>
         </Page.Footer.Links>
 
-        <Page.Footer.Copy>&copy; 2021 The TDD Workshop</Page.Footer.Copy>
+        <Page.Footer.Copy>{(year) => <>&copy; {year} The TDD Workshop</>}</Page.Footer.Copy>
       </Page.Footer>
     </Page>
   );
