@@ -32,14 +32,9 @@
 }
 
 .Page__Footer__Copy {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 1rem -1rem 0 -1rem;
-  padding: 0.25em 0;
-  width: calc(100% + 2em); /* summing parent's padding */
-}
-
-.Page__Footer__Code {
+  display: block;
   font-size: var(--fs-xs);
+  margin-top: 1rem;
+
+  text-align: center;
 }

@@ -31,9 +31,5 @@ Footer.Link = function FooterLink({ children, ...props }: Pick<LinkProps, "child
 };
 
 Footer.Copy = function FooterCopy({ children }: { children: ReactNode }) {
-  return (
-    <section className="Page__Footer__Copy">
-      <Code className="Page__Footer__Code">{children}</Code>
-    </section>
-  );
+  return <Code className="Page__Footer__Copy">{children}</Code>;
 };
