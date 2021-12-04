@@ -101,6 +101,15 @@ export default function Homepage() {
             El precio del taller es de <strong>250EUR/persona</strong> (+ IVA).
           </Page.Text>
 
+          <Figure>
+            <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
+
+            <Figure.Caption>
+              En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de
+              software (2019).
+            </Figure.Caption>
+          </Figure>
+
           <Page.Heading id="tdd">¿Por qué TDD?</Page.Heading>
 
           <Page.Text>
@@ -176,17 +185,8 @@ export default function Homepage() {
               <Page.ContactForm.Field.TextArea numberOfRows={5} />
             </Page.ContactForm.Field>
 
-            <Page.ContactForm.Submit>Enviar</Page.ContactForm.Submit>
+            <Page.ContactForm.Submit>Enviar tu mensaje</Page.ContactForm.Submit>
           </Page.ContactForm>
-
-          <Figure>
-            <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
-
-            <Figure.Caption>
-              En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de
-              software (2019).
-            </Figure.Caption>
-          </Figure>
         </Page.Row>
       </Page.Main>
 

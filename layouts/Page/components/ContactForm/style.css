@@ -13,3 +13,10 @@
 .Page__ContactForm__Toast {
   font-size: var(--fs-s);
 }
+
+@media screen and (min-width: 750px) {
+  .Page__ContactForm__Submit {
+    justify-self: end;
+    min-width: 300px;
+  }
+}
