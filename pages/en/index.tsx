@@ -34,7 +34,7 @@ export default function Homepage() {
             </Page.Header.Button>
 
             <Page.Header.Button variant="solid" href="#contact">
-              Hire me
+              Book a training session
             </Page.Header.Button>
           </Page.Header.Buttons>
         </Page.Row>
@@ -42,81 +42,74 @@ export default function Homepage() {
 
       <Page.Main>
         <Page.Row>
-          <Page.Heading id="workshop">The workshop</Page.Heading>
+          <Page.Heading id="workshop">About the workshop</Page.Heading>
 
           <Page.Text>
-            <strong>16 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
-            quieran introducirse a la metodología y disfrutar de un acercamiento completo, ameno y honesto (alejado de
-            dogmatismos).
+            People attending this workshop will enjoy a 16-hours introduction to the TDD practice. Even if it is
+            impossible to master test-driven development in a couple of days, participants will end with a complete
+            understanding of the methodology and be ready to start on the right foot.
           </Page.Text>
 
-          <Page.Subheading>¿Qué aprenderemos?</Page.Subheading>
+          <Page.Subheading>You will learn</Page.Subheading>
 
           <List>
-            <List.Item>Qué es TDD y cuáles son sus motivaciones y objetivos</List.Item>
-
             <List.Item>
-              Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas)
+              How to start doing TDD (and, more importantly, why you should not write THAT first test)
             </List.Item>
 
             <List.Item>
-              Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>)
+              How to write good tests and how different tests (unitary, integration) enable different ways to practice
+              TDD
             </List.Item>
 
-            <List.Item>Conceptos generales sobre buen diseño de software</List.Item>
+            <List.Item>How to write testable software</List.Item>
 
-            <List.Item>
-              Cómo introducir TDD en una base de código ya existente (y de qué herramientas disponemos)
-            </List.Item>
+            <List.Item>How to use test doubles to simplify writing tests for legacy applications</List.Item>
           </List>
 
-          <Page.Subheading>¿Cómo se desarrolla el taller?</Page.Subheading>
+          <Page.Subheading>How is the workshop?</Page.Subheading>
 
           <Page.Text>
-            Sólo hay una manera de aprender TDD: <strong>practicar, practicar y practicar</strong>. Por tanto, la
-            formación será eminentemente práctica; con tiempo para programar y sesiones conjuntas de{" "}
-            <em>live coding</em>.
+            There is only one way to learn test-driven development: <strong>practice, practice, and practice</strong>.
+            Therefore, the workshop is hands-on, with plenty of time to do pair-programming and live coding sessions
+            (which I will use to explain different concepts).
           </Page.Text>
 
           <Page.Text>
-            Por las circustancias actuales (COVID-19), las formaciones se realizarán de manera telemática, a través de{" "}
-            <strong>herramientas online y vídeoconferencia</strong> y se repartirá a lo largo de varios días.
+            Due to COVID-19, the workshop is primarily online, and we can divide the training sessions into several
+            days.
           </Page.Text>
 
-          <Page.Subheading>Tecnologías y lenguajes de programación</Page.Subheading>
+          <Page.Subheading>Programming languages and technologies</Page.Subheading>
 
           <Page.Text>
-            La formación se puede desarrollar utilizando prácticamente <strong>cualquier lenguaje</strong>, pero los
-            ejemplos y las sesiones de <em>live coding</em> utilizarán JavaScript/TypeScript.
+            <strong>The workshop is language-agnostic</strong>, even though it will use JavaScript/TypeScript for the
+            examples and live coding sessions. For teams working with React, we can adapt the exercises to practice TDD
+            on components and front-end applications.
           </Page.Text>
+
+          <Page.Subheading>Pricing</Page.Subheading>
 
           <Page.Text>
-            Además, el taller es agnóstico de front-end o back-end aunque se puede ajustar a las necesidades de cada
-            grupo (por ejemplo, haciendo TDD sobre componentes React si la formación se imparte a un equipo que lo
-            utilice).
+            The price is <strong>250EUR per participant</strong> (VAT not included).
           </Page.Text>
 
-          <Page.Subheading>Precio</Page.Subheading>
+          <Page.Heading>Why should I care about TDD?</Page.Heading>
 
           <Page.Text>
-            El precio del taller es de <strong>250EUR/persona</strong> (+ IVA).
+            There are few techniques as powerful and yet widely misunderstood as test-driven development. Professional
+            software engineers need practices that make it easier to deliver value consistently while fighting
+            uncertainty. TDD is not a silver bullet but provides two (often) overlooked benefits: focus -working in
+            small steps-, and confidence -verifying your changes against a working test suite. Learn TDD and become a
+            more productive software engineer: write better designed, well-tested code faster.
           </Page.Text>
 
-          <Page.Heading id="tdd">¿Por qué TDD?</Page.Heading>
-
-          <Page.Text>
-            TDD (del inglés: <em>test-driven development</em>) es una metodología que consiste en aplicar pequeños
-            ciclos de desarrollo orientados a resolver casos de prueba. Como beneficio, ganaremos en productividad
-            (siempre estamos desarrollando con un objetivo claro: hacer pasar la siguiente prueba), escribiendo a su vez
-            código bien diseñado, fácil de probar y mantener.
-          </Page.Text>
-
-          <Page.Subheading>Enlaces y materiales de interés</Page.Subheading>
+          <Page.Subheading>Learning material</Page.Subheading>
 
           <List>
             <List.Item>
               <Link href="https://bit.ly/34ZnpuO" target="_blank" rel="noreferrer">
-                Lista de lecturas recomendadas para estudiar y aprender TDD
+                A list of resources that helped me during my journey learning TDD
               </Link>
             </List.Item>
 
@@ -126,13 +119,14 @@ export default function Homepage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Aplicando (A)TDD para resolver El Juego de la Vida
+                [Spanish] Applying (A)TDD to resolve the Game Of Life's kata.
               </Link>
             </List.Item>
             <List.Item>
               <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
-                GitHub: codecoolture/react-atdd-playground
+                codecoolture/react-atdd-playground
               </Link>
+              : Template to (deliberate) practice your test-driven development skills.
             </List.Item>
           </List>
 
