@@ -33,7 +33,7 @@ export default function Homepage() {
             </Page.Header.Button>
 
             <Page.Header.Button variant="solid" href="#contact">
-              Contrátame
+              Reserva una sesión
             </Page.Header.Button>
           </Page.Header.Buttons>
         </Page.Row>
