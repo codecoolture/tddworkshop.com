@@ -112,13 +112,22 @@ export default function Homepage() {
             </Figure.Caption>
           </Figure>
 
-          <Page.Heading id="tdd">¿Por qué TDD?</Page.Heading>
+          <Page.Heading>¿Qué beneficios me aporta TDD?</Page.Heading>
 
           <Page.Text>
-            TDD (del inglés: <em>test-driven development</em>) es una metodología que consiste en aplicar pequeños
-            ciclos de desarrollo orientados a resolver casos de prueba. Como beneficio, ganaremos en productividad
-            (siempre estamos desarrollando con un objetivo claro: hacer pasar la siguiente prueba), escribiendo a su vez
-            código bien diseñado, fácil de probar y mantener.
+            TDD (del inglés: <em>test-driven development</em>) es una metodología de programación que consiste en
+            aplicar pequeños ciclos de desarrollo orientados a resolver casos de prueba. Este proceso (simple, pero no
+            sencillo), aplicado de manera iterativa, nos guiará hasta haber construido una solución completamente
+            funcional, favoreciendo dos beneficios clave: <strong>direccionalidad</strong> (siempre trabajamos con el
+            objetivo de hacer pasar la siguiente prueba, que nos debe acercar a resolver el problema final) y{" "}
+            <strong>confianza</strong> (cada uno de nuestros cambios se verifica contra el conjunto de pruebas ya
+            existentes).
+          </Page.Text>
+
+          <Page.Text>
+            Aprende TDD y mejora tu productividad: evita pérdidas de foco, bloqueos y sobreingeniería. En su lugar,
+            centra tus esfuerzos en resolver los problemas de tus usuarios y entregar valor de manera sostenible
+            mientras escribes un software mejor diseñado y más fácil de mantener.
           </Page.Text>
 
           <Page.Subheading>Enlaces y materiales de interés</Page.Subheading>
