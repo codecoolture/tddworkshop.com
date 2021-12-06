@@ -49,10 +49,12 @@ export default function Homepage() {
             dogmatismos).
           </Page.Text>
 
-          <Page.Subheading>¿Qué aprenderemos?</Page.Subheading>
+          <Page.Subheading>¿Qué aprenderás?</Page.Subheading>
 
           <List>
-            <List.Item>Qué es TDD y cuáles son sus motivaciones y objetivos</List.Item>
+            <List.Item>
+              Qué es TDD, cuáles son sus motivaciones y objetivos, y cómo poder empezar a aplicarlo de manera efectiva
+            </List.Item>
 
             <List.Item>
               Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas)
@@ -65,7 +67,7 @@ export default function Homepage() {
             <List.Item>Conceptos generales sobre buen diseño de software</List.Item>
 
             <List.Item>
-              Cómo introducir TDD en una base de código ya existente (y de qué herramientas disponemos)
+              Cómo introducir TDD en una base de código ya existente utilizando <em>test doubles</em>
             </List.Item>
           </List>
 

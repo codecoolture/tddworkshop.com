@@ -97,11 +97,16 @@ export default function Homepage() {
           <Page.Heading>Why should I care about TDD?</Page.Heading>
 
           <Page.Text>
-            There are few techniques as powerful and yet widely misunderstood as test-driven development. Professional
-            software engineers need practices that make it easier to deliver value consistently while fighting
-            uncertainty. TDD is not a silver bullet but provides two (often) overlooked benefits: focus -working in
-            small steps-, and confidence -verifying your changes against a working test suite. Learn TDD and become a
-            more productive software engineer: write better designed, well-tested code faster.
+            There are few techniques as powerful and yet widely misunderstood as test-driven development. Although not a
+            silver bullet, TDD enables two often-overlooked benefits: <strong>direction</strong> (short test 🔄 code
+            cycles towards a complete solution) and <strong>confidence</strong> (verifying your changes against a
+            working test suite).
+          </Page.Text>
+
+          <Page.Text>
+            Learn TDD and become a more productive software engineer: avoid blockers and overengineering. Instead, focus
+            on delivering value (a.k.a, fixing your users' pains) at a fast, sustainable pace while writing
+            well-designed, well-tested code.
           </Page.Text>
 
           <Page.Subheading>Learning material</Page.Subheading>
