@@ -13,8 +13,7 @@ export default function Homepage() {
         <Page.Seo.Title>Learn how to write better software in a fast, sustainable way</Page.Seo.Title>
 
         <Page.Seo.Description>
-          Descubre y aprende TDD a través de una formación práctica y completa. Basada en experiencia real y alejada de
-          dogmatismos.
+          Hire this technical training and enjoy a friendly, complete introduction to test-driven development.
         </Page.Seo.Description>
 
         <Page.Seo.Image>https://tddworkshop.com/static/img/social_en.png</Page.Seo.Image>
@@ -50,35 +49,34 @@ export default function Homepage() {
             understanding of the methodology and be ready to start on the right foot.
           </Page.Text>
 
+          <Page.Text>
+            Since there is only one way to learn test-driven development (<em>practice, practice, and practice</em>),
+            the workshop is <strong>hands-on</strong>, with plenty of time to do <strong>pair-programming</strong> and{" "}
+            <strong>live coding</strong> sessions that I will use to explain different concepts.
+          </Page.Text>
+
+          <Page.Text>
+            Please, keep in mind that due to COVID-19, the workshop is primarily online, and we can divide the training
+            sessions into several days.
+          </Page.Text>
+
           <Page.Subheading>You will learn</Page.Subheading>
 
           <List>
             <List.Item>
-              How to start doing TDD (and, more importantly, why you should not write THAT first test)
+              How to start doing TDD. This is the workshop's central outcome, and I will ensure you have all the tools
+              to start practicing TDD effectively.
             </List.Item>
 
             <List.Item>
               How to write good tests and how different tests (unitary, integration) enable different ways to practice
-              TDD
+              TDD.
             </List.Item>
 
-            <List.Item>How to write testable software</List.Item>
+            <List.Item>How to write testable software.</List.Item>
 
-            <List.Item>How to use test doubles to simplify writing tests for legacy applications</List.Item>
+            <List.Item>How to use test doubles to simplify writing tests for legacy applications.</List.Item>
           </List>
-
-          <Page.Subheading>How is the workshop?</Page.Subheading>
-
-          <Page.Text>
-            There is only one way to learn test-driven development: <strong>practice, practice, and practice</strong>.
-            Therefore, the workshop is hands-on, with plenty of time to do pair-programming and live coding sessions
-            (which I will use to explain different concepts).
-          </Page.Text>
-
-          <Page.Text>
-            Due to COVID-19, the workshop is primarily online, and we can divide the training sessions into several
-            days.
-          </Page.Text>
 
           <Page.Subheading>Programming languages and technologies</Page.Subheading>
 
@@ -109,7 +107,7 @@ export default function Homepage() {
             well-designed, well-tested code.
           </Page.Text>
 
-          <Page.Subheading>Learning material</Page.Subheading>
+          <Page.Subheading>Published material</Page.Subheading>
 
           <List>
             <List.Item>
@@ -135,22 +133,27 @@ export default function Homepage() {
             </List.Item>
           </List>
 
-          <Page.Heading id="contact">Contacto</Page.Heading>
+          <Page.Heading id="contact">About me</Page.Heading>
 
           <Page.Text>
-            ¡Hola! 👋 Soy{" "}
+            Hi! 👋 I'm{" "}
             <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
               Sergio
-            </Link>{" "}
-            y llevo una década desarrollando software profesionalmente. Desde hace varios años, compagino mi actividad
-            como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas prácticas de
-            ingeniería del software (continuous deployment, test-driven development).
+            </Link>
+            , and I have been developing software for a living for a decade. During this time, I have had the luck to
+            work with (and sometimes even lead) world-class software engineers that are now working in top-notch
+            technology companies. I have been practicing TDD nearly all this time and successfully taught the process to
+            dozen engineers (at work and in several software events). Moreover, I have introduced and successfully
+            applied several of TDD's closest practices (such as continuous deployment and trunk-based development) to
+            product teams at different startups.
           </Page.Text>
 
           <Page.Text>
-            Si quieres contratar esta formación para tu empresa, escríbeme un mensaje y te responderé lo antes posible.
-            También puedes escribirme un email a <strong>hola@codecoolture.com</strong>.
+            If you would like to hire this technical training, please use the form below or drop me a line at
+            hola@codecoolture.com.
           </Page.Text>
+
+          <Page.Subheading>Contact</Page.Subheading>
 
           <Page.ContactForm onSuccessMessage="Thank you! I will respond to you promptly.">
             <Page.ContactForm.Field name="email">
@@ -178,11 +181,13 @@ export default function Homepage() {
           </Page.ContactForm>
 
           <Figure>
-            <Figure.Image src={gdcrImg} alt="Sergio facilitando el Global Day of Coderetreat 2019 en Madrid" />
+            <Figure.Image
+              src={gdcrImg}
+              alt="Sergio talking about TDD and software development best practices at Spotahome offices in Madrid (2019)."
+            />
 
             <Figure.Caption>
-              En acción en las oficinas de Spotahome (Madrid): hablando de TDD y buenas prácticas de desarrollo de
-              software (2019).
+              Talking about TDD and software development best practices at Spotahome offices in Madrid (2019).
             </Figure.Caption>
           </Figure>
         </Page.Row>
@@ -190,10 +195,8 @@ export default function Homepage() {
 
       <Page.Footer>
         <Page.Footer.Text>
-          TDD es una práctica de referencia en equipos de software de alto rendimiento. En esta formación,
-          profundizaremos en su filosofía y motivaciones además de introducir pequeños trucos para su aplicación en
-          diferentes contextos, con el objetivo de que puedas incorporarla lo más rápido posible en tu rutina de
-          trabajo.
+          TDD is a fundamental practice for high-performing teams. In this technical training, we will go deep into its
+          motivations and objectives and introduce several tips and tricks to apply test-driven development effectively.
         </Page.Footer.Text>
 
         <Page.Footer.Links>
