@@ -41,6 +41,21 @@ export default function Homepage() {
 
       <Page.Main>
         <Page.Row>
+          <Page.Heading>Why you should care about TDD</Page.Heading>
+
+          <Page.Text>
+            There are few techniques as powerful and yet widely misunderstood as test-driven development. Although not a
+            silver bullet, TDD enables two often-overlooked benefits: <strong>direction</strong> (short test 🔄 code
+            cycles towards a complete solution) and <strong>confidence</strong> (verifying your changes against a
+            working test suite).
+          </Page.Text>
+
+          <Page.Text>
+            Learn TDD and become a more productive software engineer: avoid blockers and overengineering. Instead, focus
+            on delivering value (a.k.a, fixing your users' pains) at a fast, sustainable pace while writing
+            well-designed, well-tested code.
+          </Page.Text>
+
           <Page.Heading id="workshop">About the workshop</Page.Heading>
 
           <Page.Text>
@@ -92,19 +107,35 @@ export default function Homepage() {
             The price is <strong>250EUR per participant</strong> (VAT not included).
           </Page.Text>
 
-          <Page.Heading>Why should I care about TDD?</Page.Heading>
+          <Figure>
+            <Figure.Image
+              src={gdcrImg}
+              alt="Sergio talking about TDD and software development best practices at Spotahome offices in Madrid (2019)."
+            />
+
+            <Figure.Caption>
+              Talking about TDD and software development best practices at Spotahome offices in Madrid (2019).
+            </Figure.Caption>
+          </Figure>
+
+          <Page.Heading id="contact">About me</Page.Heading>
 
           <Page.Text>
-            There are few techniques as powerful and yet widely misunderstood as test-driven development. Although not a
-            silver bullet, TDD enables two often-overlooked benefits: <strong>direction</strong> (short test 🔄 code
-            cycles towards a complete solution) and <strong>confidence</strong> (verifying your changes against a
-            working test suite).
+            Hi! 👋 I'm{" "}
+            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
+              Sergio
+            </Link>
+            , and I have been developing software for a living for a decade. During this time, I have had the luck to
+            work with (and sometimes even lead) world-class software engineers that are now working in top-notch
+            technology companies. I have been practicing TDD nearly all this time and successfully taught the process to
+            dozen engineers (at work and in several software events). Moreover, I have introduced and successfully
+            applied several of TDD's closest practices (such as continuous deployment and trunk-based development) to
+            product teams at different startups.
           </Page.Text>
 
           <Page.Text>
-            Learn TDD and become a more productive software engineer: avoid blockers and overengineering. Instead, focus
-            on delivering value (a.k.a, fixing your users' pains) at a fast, sustainable pace while writing
-            well-designed, well-tested code.
+            If you would like to hire this technical training, please use the form below or drop me a line at
+            hola@codecoolture.com.
           </Page.Text>
 
           <Page.Subheading>Published material</Page.Subheading>
@@ -133,26 +164,6 @@ export default function Homepage() {
             </List.Item>
           </List>
 
-          <Page.Heading id="contact">About me</Page.Heading>
-
-          <Page.Text>
-            Hi! 👋 I'm{" "}
-            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
-              Sergio
-            </Link>
-            , and I have been developing software for a living for a decade. During this time, I have had the luck to
-            work with (and sometimes even lead) world-class software engineers that are now working in top-notch
-            technology companies. I have been practicing TDD nearly all this time and successfully taught the process to
-            dozen engineers (at work and in several software events). Moreover, I have introduced and successfully
-            applied several of TDD's closest practices (such as continuous deployment and trunk-based development) to
-            product teams at different startups.
-          </Page.Text>
-
-          <Page.Text>
-            If you would like to hire this technical training, please use the form below or drop me a line at
-            hola@codecoolture.com.
-          </Page.Text>
-
           <Page.Subheading>Contact</Page.Subheading>
 
           <Page.ContactForm onSuccessMessage="Thank you! I will respond to you promptly.">
@@ -179,17 +190,6 @@ export default function Homepage() {
 
             <Page.ContactForm.Submit>Send your message</Page.ContactForm.Submit>
           </Page.ContactForm>
-
-          <Figure>
-            <Figure.Image
-              src={gdcrImg}
-              alt="Sergio talking about TDD and software development best practices at Spotahome offices in Madrid (2019)."
-            />
-
-            <Figure.Caption>
-              Talking about TDD and software development best practices at Spotahome offices in Madrid (2019).
-            </Figure.Caption>
-          </Figure>
         </Page.Row>
       </Page.Main>
 
