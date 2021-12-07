@@ -2,7 +2,7 @@ import { NextMiddleware, NextResponse } from "next/server";
 import { getAcceptedLanguages } from "../lib/getAcceptedLanguages";
 
 const middleware: NextMiddleware = (req) => {
-  if (req.nextUrl.pathname === "/__test") {
+  if (req.nextUrl.pathname === "/") {
     const locales = ["en", "es"];
     const defaultLocale = "en";
 
