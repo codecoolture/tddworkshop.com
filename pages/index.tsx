@@ -41,6 +41,23 @@ export default function Homepage() {
 
       <Page.Main>
         <Page.Row>
+          <Page.Heading>Por qué aprender TDD es una buena idea</Page.Heading>
+
+          <Page.Text>
+            Test-driven development es una metodología de programación que consiste en aplicar pequeños ciclos de
+            desarrollo orientados a resolver casos de prueba. Este proceso (simple, pero no sencillo), aplicado de
+            manera iterativa, nos guiará hasta haber construido una solución completamente funcional, favoreciendo dos
+            beneficios clave: <strong>direccionalidad</strong> (siempre trabajamos con el objetivo de hacer pasar la
+            siguiente prueba que nos acerque a resolver el problema final) y <strong>confianza</strong> (cada uno de
+            nuestros cambios se verifica contra un conjunto de pruebas ya existentes).
+          </Page.Text>
+
+          <Page.Text>
+            Aprende TDD y evita pérdidas de foco, bloqueos y sobreingeniería. En su lugar, dedica tiempo a resolver los
+            problemas que realmente importan, entregando valor de manera sostenible mientras escribes un software mejor
+            diseñado y más fácil de mantener.
+          </Page.Text>
+
           <Page.Heading id="workshop">El taller</Page.Heading>
 
           <Page.Text>
@@ -49,40 +66,38 @@ export default function Homepage() {
             dogmatismos).
           </Page.Text>
 
-          <Page.Subheading>¿Qué aprenderás?</Page.Subheading>
-
-          <List>
-            <List.Item>
-              Qué es TDD, cuáles son sus motivaciones y objetivos, y cómo poder empezar a aplicarlo de manera efectiva
-            </List.Item>
-
-            <List.Item>
-              Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas)
-            </List.Item>
-
-            <List.Item>
-              Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>)
-            </List.Item>
-
-            <List.Item>Conceptos generales sobre buen diseño de software</List.Item>
-
-            <List.Item>
-              Cómo introducir TDD en una base de código ya existente utilizando <em>test doubles</em>
-            </List.Item>
-          </List>
-
-          <Page.Subheading>¿Cómo se desarrolla el taller?</Page.Subheading>
-
           <Page.Text>
-            Sólo hay una manera de aprender TDD: <strong>practicar, practicar y practicar</strong>. Por tanto, la
-            formación será eminentemente práctica; con tiempo para programar y sesiones conjuntas de{" "}
-            <em>live coding</em>.
+            Como sólo hay una manera de aprender TDD (<strong>practicar, practicar y practicar</strong>), la formación
+            será eminentemente práctica; con tiempo para programar en parejas y sesiones conjuntas de{" "}
+            <em>live coding</em> (que utilizaré, fundamentalmente, para explicar varios conceptos).
           </Page.Text>
 
           <Page.Text>
             Por las circustancias actuales (COVID-19), las formaciones se realizarán de manera telemática, a través de{" "}
             <strong>herramientas online y vídeoconferencia</strong> y se repartirá a lo largo de varios días.
           </Page.Text>
+
+          <Page.Subheading>¿Qué aprenderás?</Page.Subheading>
+
+          <List>
+            <List.Item>
+              Qué es TDD, cuáles son sus motivaciones y objetivos, y cómo poder empezar a aplicarlo de manera efectiva.
+            </List.Item>
+
+            <List.Item>
+              Qué tipos de tests podemos utilizar para practicar TDD (con sus diferentes ventajas y desventajas).
+            </List.Item>
+
+            <List.Item>
+              Diferentes maneras de enfocar la práctica de TDD (<em>inside-out</em> vs <em>outside-in</em>).
+            </List.Item>
+
+            <List.Item>Conceptos generales sobre buen diseño de software.</List.Item>
+
+            <List.Item>
+              Cómo introducir TDD en una base de código ya existente utilizando <em>test doubles</em>.
+            </List.Item>
+          </List>
 
           <Page.Subheading>Tecnologías y lenguajes de programación</Page.Subheading>
 
@@ -112,25 +127,24 @@ export default function Homepage() {
             </Figure.Caption>
           </Figure>
 
-          <Page.Heading>¿Qué beneficios me aporta TDD?</Page.Heading>
+          <Page.Heading id="contact">Contacto</Page.Heading>
 
           <Page.Text>
-            TDD (del inglés: <em>test-driven development</em>) es una metodología de programación que consiste en
-            aplicar pequeños ciclos de desarrollo orientados a resolver casos de prueba. Este proceso (simple, pero no
-            sencillo), aplicado de manera iterativa, nos guiará hasta haber construido una solución completamente
-            funcional, favoreciendo dos beneficios clave: <strong>direccionalidad</strong> (siempre trabajamos con el
-            objetivo de hacer pasar la siguiente prueba, que nos debe acercar a resolver el problema final) y{" "}
-            <strong>confianza</strong> (cada uno de nuestros cambios se verifica contra el conjunto de pruebas ya
-            existentes).
+            ¡Hola! 👋 Soy{" "}
+            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
+              Sergio
+            </Link>{" "}
+            y llevo una década desarrollando software profesionalmente. Desde hace varios años, compagino mi actividad
+            como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas prácticas de
+            ingeniería del software (continuous deployment, test-driven development, trunk-based development).
           </Page.Text>
 
           <Page.Text>
-            Aprende TDD y mejora tu productividad: evita pérdidas de foco, bloqueos y sobreingeniería. En su lugar,
-            centra tus esfuerzos en resolver los problemas de tus usuarios y entregar valor de manera sostenible
-            mientras escribes un software mejor diseñado y más fácil de mantener.
+            Si quieres contratar esta formación para tu empresa, escríbeme un mensaje utilizando el formulario a
+            continuación y te responderé lo antes posible. También puedes escribirme un email a hola@codecoolture.com.
           </Page.Text>
 
-          <Page.Subheading>Enlaces y materiales de interés</Page.Subheading>
+          <Page.Subheading>Material publicado</Page.Subheading>
 
           <List>
             <List.Item>
@@ -150,27 +164,11 @@ export default function Homepage() {
             </List.Item>
             <List.Item>
               <Link href="https://github.com/codecoolture/react-atdd-playground" target="_blank" rel="noreferrer">
-                GitHub: codecoolture/react-atdd-playground
+                codecoolture/react-atdd-playground
               </Link>
+              : plantilla para practicar TDD en aplicaciones JavaScript
             </List.Item>
           </List>
-
-          <Page.Heading id="contact">Contacto</Page.Heading>
-
-          <Page.Text>
-            ¡Hola! 👋 Soy{" "}
-            <Link href="https://www.linkedin.com/in/sergioalvarezsuarez/" target="_blank" rel="noreferrer">
-              Sergio
-            </Link>{" "}
-            y llevo una década desarrollando software profesionalmente. Desde hace varios años, compagino mi actividad
-            como desarrollador con el liderazgo de equipos de ingeniería, facilitando la adopción de buenas prácticas de
-            ingeniería del software (continuous deployment, test-driven development).
-          </Page.Text>
-
-          <Page.Text>
-            Si quieres contratar esta formación para tu empresa, escríbeme un mensaje y te responderé lo antes posible.
-            También puedes escribirme un email a <strong>hola@codecoolture.com</strong>.
-          </Page.Text>
 
           <Page.Subheading>¿Hablamos?</Page.Subheading>
 
