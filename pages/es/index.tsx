@@ -1,3 +1,4 @@
+import { FaGithub, FaLink, FaTwitter } from "react-icons/fa";
 import { Figure } from "../../components/Figure";
 import { Link } from "../../components/Link";
 import { List } from "../../components/List";
@@ -217,6 +218,20 @@ export default function Homepage() {
         </Page.Footer.Text>
 
         <Page.Footer.Copy>{(year) => <>&copy; {year} The TDD Workshop</>}</Page.Footer.Copy>
+
+        <Page.Footer.Social>
+          <Page.Footer.Social.Link href="https://twitter.com/codecoolture">
+            <FaTwitter />
+          </Page.Footer.Social.Link>
+
+          <Page.Footer.Social.Link href="https://github.com/codecoolture">
+            <FaGithub />
+          </Page.Footer.Social.Link>
+
+          <Page.Footer.Social.Link href="https://codecoolture.com">
+            <FaLink />
+          </Page.Footer.Social.Link>
+        </Page.Footer.Social>
       </Page.Footer>
     </Page>
   );

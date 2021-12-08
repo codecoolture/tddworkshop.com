@@ -12,6 +12,18 @@ function Footer({ children }: { children: ReactNode }) {
   );
 }
 
+function FooterSocial({ children }: { children: React.ReactNode }) {
+  return <div className="Page__Footer__Social">{children}</div>;
+}
+
+function FooterSocialLink({ children, href }: { children: React.ReactNode; href: string }) {
+  return (
+    <a href={href} target="_blank" rel="noreferer" className="Page__Footer__Social__Link">
+      {children}
+    </a>
+  );
+}
+
 function FooterText({ children }: { children: ReactNode }) {
   return <p className="Page__Footer__Text">{children}</p>;
 }
@@ -50,6 +62,10 @@ function FooterLanguagesLanguage({ children, href }: { children: React.ReactNode
 FooterLanguages.Title = FooterLanguagesTitle;
 FooterLanguages.List = FooterLanguagesList;
 FooterLanguages.Language = FooterLanguagesLanguage;
+
+FooterSocial.Link = FooterSocialLink;
+
+Footer.Social = FooterSocial;
 Footer.Text = FooterText;
 Footer.Copy = FooterCopy;
 Footer.Languages = FooterLanguages;
