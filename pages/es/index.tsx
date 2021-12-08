@@ -200,18 +200,21 @@ export default function Homepage() {
       </Page.Main>
 
       <Page.Footer>
+        <Page.Footer.Languages>
+          <Page.Footer.Languages.Title>Idioma</Page.Footer.Languages.Title>
+
+          <Page.Footer.Languages.List>
+            <Page.Footer.Languages.Language>Español</Page.Footer.Languages.Language>
+            <Page.Footer.Languages.Language href="/en">English</Page.Footer.Languages.Language>
+          </Page.Footer.Languages.List>
+        </Page.Footer.Languages>
+
         <Page.Footer.Text>
           TDD es una práctica de referencia en equipos de software de alto rendimiento. En esta formación,
           profundizaremos en su filosofía y motivaciones además de introducir pequeños trucos para su aplicación en
           diferentes contextos, con el objetivo de que puedas incorporarla lo más rápido posible en tu rutina de
           trabajo.
         </Page.Footer.Text>
-
-        <Page.Footer.Links>
-          <Page.Footer.Link href="https://codecoolture.com" rel="noreferrer">
-            Visita codecoolture.com
-          </Page.Footer.Link>
-        </Page.Footer.Links>
 
         <Page.Footer.Copy>{(year) => <>&copy; {year} The TDD Workshop</>}</Page.Footer.Copy>
       </Page.Footer>

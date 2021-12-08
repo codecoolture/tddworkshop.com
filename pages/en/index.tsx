@@ -194,16 +194,19 @@ export default function Homepage() {
       </Page.Main>
 
       <Page.Footer>
+        <Page.Footer.Languages>
+          <Page.Footer.Languages.Title>Language</Page.Footer.Languages.Title>
+
+          <Page.Footer.Languages.List>
+            <Page.Footer.Languages.Language>English</Page.Footer.Languages.Language>
+            <Page.Footer.Languages.Language href="/es">Español</Page.Footer.Languages.Language>
+          </Page.Footer.Languages.List>
+        </Page.Footer.Languages>
+
         <Page.Footer.Text>
           TDD is a fundamental practice for high-performing teams. In this technical training, we will go deep into its
           motivations and objectives and introduce several tips and tricks to apply test-driven development effectively.
         </Page.Footer.Text>
-
-        <Page.Footer.Links>
-          <Page.Footer.Link href="https://codecoolture.com" rel="noreferrer">
-            Visit codecoolture.com
-          </Page.Footer.Link>
-        </Page.Footer.Links>
 
         <Page.Footer.Copy>{(year) => <>&copy; {year} The TDD Workshop</>}</Page.Footer.Copy>
       </Page.Footer>

@@ -11,30 +11,45 @@
   font-family: var(--ff-serif);
 }
 
-.Page__Footer__Links {
-  margin-top: 1rem;
-
-  list-style-type: none;
-}
-
-.Page__Footer__LinkWrapper {
-  display: flex;
-  font-size: var(--fs-m);
-  margin-top: 0.5rem;
-}
-
-.Page__Footer__Link {
-  letter-spacing: 1px;
-
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .Page__Footer__Copy {
   display: block;
   font-size: var(--fs-xs);
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   text-align: center;
+}
+
+.Page__Footer__Languages {
+  margin-bottom: 1rem;
+}
+
+.Page__Footer__Languages__Title {
+  font-size: var(--fs-xs);
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.Page__Footer__Languages__Title::before {
+  content: "🌍";
+
+  margin-right: 0.25rem;
+}
+
+.Page__Footer__Languages__List {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.Page__Footer__Languages__Language {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Page__Footer__Languages__Language:not(:first-child)::before {
+  content: "/";
+
+  margin-right: 0.5rem;
+
+  color: var(--yellow9);
 }
