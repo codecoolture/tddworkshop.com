@@ -64,6 +64,7 @@
 
 .Page__Footer__Social__Link {
   align-items: center;
+  border: 2px solid var(--indigo7);
   display: flex;
   font-size: var(--fs-s);
   justify-content: center;
@@ -72,4 +73,11 @@
   background-color: var(--indigo3);
   border-radius: 100%;
   color: var(--indigo11);
+
+  transition: all ease-in 150ms;
+}
+
+.Page__Footer__Social__Link:hover {
+  background-color: var(--indigo4);
+  border-color: var(--indigo8);
 }
