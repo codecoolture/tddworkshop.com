@@ -1,5 +1,5 @@
 .Button {
-  border: 2px solid var(--gray6);
+  border: 2px solid var(--gray7);
   display: block;
   font-size: var(--fs-m);
   padding: 0.5rem 1rem;
@@ -17,17 +17,17 @@
 }
 
 .Button:hover {
-  background-color: var(--gray5);
-  border-color: var(--gray7);
+  background-color: var(--gray4);
+  border-color: var(--gray8);
 }
 
 .Button--Solid {
   background-color: var(--indigo3);
-  border-color: var(--indigo6);
+  border-color: var(--indigo7);
   color: var(--indigo11);
 }
 
 .Button--Solid:hover {
-  background-color: var(--indigo5);
-  border-color: var(--indigo7);
+  background-color: var(--indigo4);
+  border-color: var(--indigo8);
 }
