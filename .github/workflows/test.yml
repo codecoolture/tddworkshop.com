@@ -22,3 +22,16 @@ jobs:
           cache: "yarn"
       - run: "yarn install"
       - run: "yarn test"
+  test_acceptance:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.13.1"
+          cache: "yarn"
+      - run: "yarn install"
+      - uses: cypress-io/github-action@v2
+        with:
+          command: "yarn ci:test:acc"
