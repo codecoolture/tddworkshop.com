@@ -10,6 +10,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["next", "@next/eslint-plugin-next", "@netlify/plugin-nextjs"],
+      "automerge": false
+    },
+    {
+      "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "automerge": true
