@@ -60,7 +60,7 @@ export default function Homepage() {
           <Page.Heading id="workshop">About the workshop</Page.Heading>
 
           <Page.Text>
-            People attending this workshop will enjoy a 16-hours introduction to the TDD practice. Even if it is
+            People attending this workshop will enjoy a 10-hours introduction to the TDD practice. Even if it is
             impossible to master test-driven development in a couple of days, participants will end with a complete
             understanding of the methodology and be ready to start on the right foot.
           </Page.Text>

@@ -62,7 +62,7 @@ export default function Homepage() {
           <Page.Heading id="workshop">El taller</Page.Heading>
 
           <Page.Text>
-            <strong>16 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
+            <strong>10 horas dedicadas a aprender y practicar TDD</strong>. El taller está orientado a equipos que
             quieran introducirse a la metodología y disfrutar de un acercamiento completo, ameno y honesto (alejado de
             dogmatismos).
           </Page.Text>
