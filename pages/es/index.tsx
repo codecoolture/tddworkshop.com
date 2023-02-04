@@ -140,9 +140,12 @@ export default function Homepage() {
             ingeniería del software (continuous deployment, test-driven development, trunk-based development).
           </Page.Text>
 
+          <Page.Subheading>¿Hablamos?</Page.Subheading>
+
           <Page.Text>
-            Si quieres contratar esta formación para tu empresa, escríbeme un mensaje utilizando el formulario a
-            continuación y te responderé lo antes posible. También puedes escribirme un email a hola@codecoolture.com.
+            Si quieres contratar esta formación para tu empresa, escríbeme un mensaje a{" "}
+            <strong>hola@codecoolture.com</strong> y cuéntame un poco sobre tu equipo y los proyectos en los que estáis
+            trabajando.
           </Page.Text>
 
           <Page.Subheading>Material publicado</Page.Subheading>
@@ -170,33 +173,6 @@ export default function Homepage() {
               : plantilla para practicar TDD en aplicaciones JavaScript
             </List.Item>
           </List>
-
-          <Page.Subheading>¿Hablamos?</Page.Subheading>
-
-          <Page.ContactForm onSuccessMessage="¡Gracias! Mensaje recibido.">
-            <Page.ContactForm.Field name="email">
-              <Page.ContactForm.Field.Label>Tu email</Page.ContactForm.Field.Label>
-
-              <Page.ContactForm.Field.Hint>Lo utilizaré para responderte</Page.ContactForm.Field.Hint>
-
-              <Page.ContactForm.Field.Input />
-
-              <Page.ContactForm.Field.Error>Por favor, introduce un email válido.</Page.ContactForm.Field.Error>
-            </Page.ContactForm.Field>
-
-            <Page.ContactForm.Field name="message">
-              <Page.ContactForm.Field.Label>Mensaje</Page.ContactForm.Field.Label>
-
-              <Page.ContactForm.Field.Hint>
-                Este campo es <strong>opcional</strong>, pero puedes utilizarlo para contarme algo sobre ti o,
-                simplemente, saludar :-)
-              </Page.ContactForm.Field.Hint>
-
-              <Page.ContactForm.Field.TextArea numberOfRows={5} />
-            </Page.ContactForm.Field>
-
-            <Page.ContactForm.Submit>Enviar tu mensaje</Page.ContactForm.Submit>
-          </Page.ContactForm>
         </Page.Row>
       </Page.Main>
 
