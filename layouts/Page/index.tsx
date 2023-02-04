@@ -1,4 +1,3 @@
-import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Heading } from "./components/Heading";
@@ -15,8 +14,6 @@ export function Page({ children }: PageProps) {
 }
 
 Page.Header = Header;
-
-Page.ContactForm = ContactForm;
 
 Page.Footer = Footer;
 

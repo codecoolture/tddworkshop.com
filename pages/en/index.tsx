@@ -134,9 +134,11 @@ export default function Homepage() {
             product teams at different startups.
           </Page.Text>
 
+          <Page.Subheading>Contact</Page.Subheading>
+
           <Page.Text>
-            If you would like to hire this technical training, please use the form below or drop me a line at
-            hola@codecoolture.com.
+            Would you like to hire this technical training? Please drop me a line at{" "}
+            <strong>hola@codecoolture.com</strong> and tell me about your team and the projects you are working on!
           </Page.Text>
 
           <Page.Subheading>Published material</Page.Subheading>
@@ -164,33 +166,6 @@ export default function Homepage() {
               : Template to (deliberate) practice your test-driven development skills.
             </List.Item>
           </List>
-
-          <Page.Subheading>Contact</Page.Subheading>
-
-          <Page.ContactForm onSuccessMessage="Thank you! I will respond to you promptly.">
-            <Page.ContactForm.Field name="email">
-              <Page.ContactForm.Field.Label>Your email</Page.ContactForm.Field.Label>
-
-              <Page.ContactForm.Field.Hint>Use an email where you want to receive my reply</Page.ContactForm.Field.Hint>
-
-              <Page.ContactForm.Field.Input />
-
-              <Page.ContactForm.Field.Error>Please, use a valid email.</Page.ContactForm.Field.Error>
-            </Page.ContactForm.Field>
-
-            <Page.ContactForm.Field name="message">
-              <Page.ContactForm.Field.Label>Your message</Page.ContactForm.Field.Label>
-
-              <Page.ContactForm.Field.Hint>
-                This is <strong>optional</strong>. You may use it to ask for more information, tell me about your
-                project, or say hi :-)
-              </Page.ContactForm.Field.Hint>
-
-              <Page.ContactForm.Field.TextArea numberOfRows={5} />
-            </Page.ContactForm.Field>
-
-            <Page.ContactForm.Submit>Send your message</Page.ContactForm.Submit>
-          </Page.ContactForm>
         </Page.Row>
       </Page.Main>
 

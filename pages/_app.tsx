@@ -1,7 +1,6 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
-import { Toaster } from "react-hot-toast";
 import { useFathom } from "../hooks";
 import "../styles/index.css";
 
@@ -21,8 +20,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
-
-      <Toaster />
     </React.Fragment>
   );
 }
