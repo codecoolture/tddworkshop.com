@@ -9,7 +9,7 @@ export function Figure(props: FigureProps) {
 }
 
 Figure.Image = function FigureImage(props: Pick<ImageProps, "src" | "alt">) {
-  return <Image src={props.src} alt={props.alt} placeholder="blur" />;
+  return <Image src={props.src} alt={props.alt} placeholder="blur" className="Figure__Image" />;
 };
 
 Figure.Caption = function FigureCaption(props: { children: React.ReactNode }) {

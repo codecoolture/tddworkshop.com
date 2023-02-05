@@ -4,6 +4,11 @@
   margin: 2em 0;
 }
 
+.Figure__Image {
+  max-width: 100%;
+  height: auto;
+}
+
 .Figure__Caption {
   font-size: var(--fs-s);
   margin-top: 0.5rem;
