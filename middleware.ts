@@ -1,5 +1,5 @@
 import { NextMiddleware, NextResponse } from "next/server";
-import { getAcceptedLanguages } from "../lib/getAcceptedLanguages";
+import { getAcceptedLanguages } from "./lib/getAcceptedLanguages";
 
 const middleware: NextMiddleware = (req) => {
   if (req.nextUrl.pathname === "/") {
