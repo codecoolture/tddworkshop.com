@@ -7,15 +7,16 @@
   "dependencies": {
     "@radix-ui/colors": "0.1.8",
     "fathom-client": "3.5.0",
-    "next": "12.0.8",
+    "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.7.1",
     "react-tooltip": "5.7.4",
+    "sharp": "0.31.3",
     "yup": "0.32.11"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "12.0.8",
+    "@next/eslint-plugin-next": "13.1.6",
     "@testing-library/cypress": "8.0.7",
     "@types/jest": "27.5.2",
     "@types/react": "17.0.47",
