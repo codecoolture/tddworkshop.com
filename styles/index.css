@@ -1,3 +1,5 @@
+@import "react-tooltip/dist/react-tooltip.css";
+
 @import "@radix-ui/colors/grayDark.css";
 @import "@radix-ui/colors/indigoDark.css";
 @import "@radix-ui/colors/redDark.css";
@@ -7,6 +9,7 @@
 @import "../components/Button/style.css";
 @import "../components/Blockquote/style.css";
 @import "../components/Code/style.css";
+@import "../components/Email/style.css";
 @import "../components/Figure/style.css";
 @import "../components/Link/style.css";
 @import "../components/List/style.css";

@@ -1,0 +1,35 @@
+.Email {
+  align-items: baseline;
+  border: 1px dashed var(--gray7);
+  display: inline-flex;
+  font-size: 1em;
+  padding: 0 0.15rem;
+
+  color: var(--gray11);
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-weight: 700;
+
+  appearance: none;
+
+  transition: border-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.Email:hover {
+  border-color: var(--gray8);
+  color: var(--gray12);
+}
+
+.Email__Icon {
+  font-size: 0.65em;
+  margin-left: 0.25rem;
+}
+
+.Email .Email__Tooltip {
+  font-size: 0.65em;
+
+  background-color: var(--gray3);
+  color: var(--gray12);
+}

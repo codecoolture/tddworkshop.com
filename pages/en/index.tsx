@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Email } from "../../components/Email";
 import { Figure } from "../../components/Figure";
 import { Link } from "../../components/Link";
 import { List } from "../../components/List";
@@ -138,7 +139,8 @@ export default function Homepage() {
 
           <Page.Text>
             Would you like to hire this technical training? Please drop me a line at{" "}
-            <strong>hola@codecoolture.com</strong> and tell me about your team and the projects you are working on!
+            <Email onCopyTooltip="Email copied to clipboard">hola@codecoolture.com</Email> and tell me about your team
+            and the projects you are working on!
           </Page.Text>
 
           <Page.Subheading>Published material</Page.Subheading>

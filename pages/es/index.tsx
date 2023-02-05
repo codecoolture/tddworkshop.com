@@ -1,4 +1,5 @@
 import { FaGithub, FaLink, FaTwitter } from "react-icons/fa";
+import { Email } from "../../components/Email";
 import { Figure } from "../../components/Figure";
 import { Link } from "../../components/Link";
 import { List } from "../../components/List";
@@ -144,8 +145,8 @@ export default function Homepage() {
 
           <Page.Text>
             Si quieres contratar esta formación para tu empresa, escríbeme un mensaje a{" "}
-            <strong>hola@codecoolture.com</strong> y cuéntame un poco sobre tu equipo y los proyectos en los que estáis
-            trabajando.
+            <Email onCopyTooltip="Email copiado al portapapeles">hola@codecoolture.com</Email> y cuéntame un poco sobre
+            tu equipo y los proyectos en los que estáis trabajando.
           </Page.Text>
 
           <Page.Subheading>Material publicado</Page.Subheading>
