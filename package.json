@@ -13,7 +13,7 @@
     "react-icons": "4.7.1",
     "react-tooltip": "5.7.4",
     "sharp": "0.31.3",
-    "yup": "0.32.11"
+    "yup": "1.0.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "13.1.6",
