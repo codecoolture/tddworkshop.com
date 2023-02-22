@@ -11,7 +11,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.7.1",
-    "react-tooltip": "5.8.1",
+    "react-tooltip": "5.8.2",
     "sharp": "0.31.3",
     "yup": "1.0.0"
   },
