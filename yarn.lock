@@ -4088,10 +4088,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-tooltip@5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.12.0.tgz#421c1b2bc673bcca80f9c41a6d2ab544c626526c"
-  integrity sha512-1e9jQPg3H0wd8Gpn5p7cVSAjXLtzyq+7MESEtB825nPm4QrgLm2V8/XI073u8yEJN/nkDpKY/a8pA8bZlN65/Q==
+react-tooltip@5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.13.0.tgz#d9d91ec91ec7852651d557e1335a27d6b7b81406"
+  integrity sha512-7D+vJL2FCwx8t4s4YJnnq0umpkIj47l/c80Lp56zG7++efrN0F5JFVcqQ2d7BrcOeWsADCf5ysWlPa9n0+Srxg==
   dependencies:
     "@floating-ui/dom" "^1.0.0"
     classnames "^2.3.0"
