@@ -12,7 +12,7 @@
     "react-dom": "18.2.0",
     "react-icons": "4.10.1",
     "react-tooltip": "5.15.0",
-    "sharp": "0.32.1",
+    "sharp": "0.32.4",
     "yup": "1.2.0"
   },
   "devDependencies": {
