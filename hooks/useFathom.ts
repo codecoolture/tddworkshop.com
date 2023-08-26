@@ -7,8 +7,8 @@ export const useFathom = () => {
 
   useEffect(() => {
     Fathom.load("MZIALJZP", {
+      honorDNT: true,
       includedDomains: ["tddworkshop.com"],
-      url: "https://alpaca.tddworkshop.com/script.js",
     });
 
     function onRouteChangeComplete() {
