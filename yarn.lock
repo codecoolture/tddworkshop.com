@@ -2231,10 +2231,10 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fathom-client@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/fathom-client/-/fathom-client-3.6.0.tgz#f46d8949cf73df89998a8793e51ad2c21efd703b"
-  integrity sha512-/mrgmVvpw4HqDCcqUfPulERhONKgnJGL74RAxfqKDuRQ+7w9lKoTHMzqBWE7WNBvmsgZEthQWJFOWOEjv+T3gA==
+fathom-client@3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/fathom-client/-/fathom-client-3.7.2.tgz#819920316935974a200509dcf07774a3599676a9"
+  integrity sha512-sWtaNivhg7uwp/q1bUuIiNj4LeQZMEZ5NXXFFpZ8le4uDedAfQG84gPOdYehtVXbl+1yX2s8lmXZ2+IQ9a/xxA==
 
 fb-watchman@^2.0.0:
   version "2.0.2"
